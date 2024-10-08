@@ -23,7 +23,7 @@
         </form>
 
         <div class="linha-separacao">
-            <p>Não tem uma conta? <a href="./view/pages/cadastro.php" class="link-cadastro">Cadastre-se</a></p>
+            <p>Não tem uma conta? <a href="cadastro.php" class="link-cadastro">Cadastre-se</a></p>
         </div>
     </div>
 </body>
