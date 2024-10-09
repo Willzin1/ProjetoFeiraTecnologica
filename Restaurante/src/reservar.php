@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Executa a consulta
     if ($stmt->execute()) {
         
-        header("Location: /view/pages/confirmacao.php");
+        header("Location: /view/pages/confirmacao.php?data=$data&hora=$hora&quantidade_cadeiras=$quantidade_cadeiras");
         exit();
     } else {
         echo "Erro: " . $stmt->error;
