@@ -13,6 +13,10 @@
             header("Location: /../views/user_crud_create.php");
         }
 
+        public function cardapio(){
+            header("Location: /../views/part_view_cardapio.php");
+        }
+
         public function create($nome, $email, $senha){
             $stmt = $this->pdo->prepare("INSERT INTO usuario (nome, email, senha) values ($nome, $email, $senha)");
             $stmt->execute(['nome' => $nome, 'email' => $email, 'senha' => password_hash()]);
