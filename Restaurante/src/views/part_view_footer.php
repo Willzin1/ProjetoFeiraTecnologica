@@ -1,22 +1,22 @@
 <!-- ALGO -->
-    <img src="src/images/wave.svg" alt="">
+<img src="<?=  'http://' . $_SERVER['HTTP_HOST'] . "/views/Assets/Imagens/wave.svg" ?>" alt="">
 
-    <div id="footer_items">
-        <span id="copyright">
-            &copy 2024 Feira Tecnológica ETEC ZL
-        </span>
+<div id="footer_items">
+    <span id="copyright">
+        &copy 2024 Feira Tecnológica ETEC ZL
+    </span>
 
-        <div class="social-media-buttons">
-            <a href="">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
+    <div class="social-media-buttons">
+        <a href="">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
 
-            <a href="">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+        <a href="">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
 
-            <a href="">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-        </div>
+        <a href="">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
     </div>
+</div>
