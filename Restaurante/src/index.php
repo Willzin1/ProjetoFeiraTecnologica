@@ -1,41 +1,23 @@
-<?php
-    require __DIR__ . "/../vendor/autoload.php";
-    use App\persistence\ConnectionFactory;
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include './views/part_view_header.php' ?>
+    <title>SUSTENTÁVEL SITE</title>
+</head>
+<body>
+    <header>
+        <?php include './views/part_view_header_nav.php'; ?>
+    </header>
 
-    $conn = ConnectionFactory::getConnection();
+    <main id="content">
+        <?php include './views/part_view_main_content.php'; ?>
+    </main>
 
-// Verificar conexão
-if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
-}
-
-// Verifica se o formulário foi enviado
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-
-    // Prepara a consulta SQL para verificar as credenciais
-    $stmt = $conn->prepare("SELECT id FROM usuarios WHERE email = ? AND senha = ?");
-    $stmt->bind_param("ss", $email, $senha); // 'ss' para string, string
-    $stmt->execute();
-    $stmt->store_result();
-
-    // Verifica se as credenciais estão corretas
-    if ($stmt->num_rows > 0) {
-        // Armazena o ID do usuário na sessão
-        $stmt->bind_result($usuario_id);
-        $stmt->fetch();
-        $_SESSION['usuario_id'] = $usuario_id;
-
-        // Redireciona para o painel do usuário
-        header("Location: ./view/pages/usuario.php");
-        exit();
-    } else {
-        $erro = "Email ou senha incorretos.";
-    }
-
-    $stmt->close();
-}
-
-$conn->close();
-?>
+    <footer>
+        <?php include './views/part_view_footer.php'; ?>
+    </footer>
+    
+</body>
+</html>
