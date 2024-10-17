@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color-primary-1: #fff9ea;
+  --color-primary-2: #ffe8b4;
+  --color-primary-3: #f8d477;
+  --color-primary-4: #ffe100;
+  --color-primary-5: #ffcb45;
+  --color-primary-6: #e9a209;
+  --color-secundary-1: #c3ffab;
+  --color-secundary-2: #ff0000;
+  --color-secundary-3: #183d00;
+  --color-secundary-4: #0044ff;
+
+  --color-neutral-0: #fff;
+  --color-neutral-1: #1d1d1d;
+}
+
+/* Reset de estilos básicos */
+body.cadastro-page, h1.cadastro-title, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins */
+}
+
+body.cadastro-page {
+  background-color: var(--color-primary-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+h1.cadastro-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cadastro-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 600px;
+  padding: 20px;
+}
+
+.cadastro-form {
+  background-color: var(--color-primary-1);
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%; /* Ajustado para 90% da largura da tela */
+  max-width: 400px; /* Limite máximo de 400px */
+  text-align: center;
+  margin: 0;
+}
+
+.cadastro-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.cadastro-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.cadastro-input:focus {
+  border-color: var(--color-primary-6);
+  outline: none;
+}
+
+.cadastro-button {
+  background-color: var(--color-primary-6);
+  color: var(--color-neutral-1);
+  padding: 10px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.cadastro-button:hover {
+  background-color: var(--color-secundary-1);
+}
+
+.cadastro-link {
+  color: var(--color-neutral-1);
+  text-decoration: none;
+  margin-top: 10px; /* Margem acima */
+  margin-bottom: 20px; /* Margem abaixo para aumentar o espaço até o botão */
+  display: block; /* Faz com que o link ocupe toda a linha */
+}
+
+.cadastro-link:hover {
+  text-decoration: none;
+}
+
+#topo-cad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#nav_cad {
+  font-size: 50px; /* Aumente este valor conforme desejado */
+  color: var(--color-primary-6);
+}
+
+.sustenta {
+    font-size: 50px;
+    color: var(--color-primary-6);
+    }
+    
+    #logo-cad {
+      max-width: 150px; /* Ajuste o valor conforme necessário */
+      height: auto; /* Mantém a proporção da imagem */
+      margin-bottom: 20px; /* Espaçamento abaixo do logotipo */
+    }
+
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+  body.cadastro-page {
+    height: auto; /* Permite que a altura do corpo se ajuste */
+    padding: 20px; /* Adiciona um pouco de padding */
+  }
+
+  .cadastro-form {
+    width: 95%; /* Aumenta a largura em telas menores */
+    padding: 15px; /* Reduz o padding do formulário */
+  }
+
+  h1.cadastro-title {
+    font-size: 24px; /* Ajusta o tamanho da fonte do título */
+    margin-bottom: 15px; /* Ajusta a margem abaixo do título */
+  }
+
+  .cadastro-input {
+    padding: 8px; /* Reduz o padding dos inputs */
+  }
+
+  .cadastro-button {
+    font-size: 14px; /* Reduz o tamanho do botão */
+  }
+
+  #nav_cad {
+    font-size: 40px; /* Ajusta o tamanho do logo */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1.cadastro-title {
+    font-size: 20px; /* Ajusta ainda mais o tamanho da fonte do título */
+  }
+
+  .cadastro-form {
+    padding: 10px; /* Reduz o padding do formulário */
+  }
+
+  .cadastro-input {
+    padding: 6px; /* Reduz ainda mais o padding dos inputs */
+  }
+
+  .cadastro-button {
+    font-size: 12px; /* Reduz o tamanho do botão */
+  }
+
+  .cadastro-link {
+    margin-top: 5px; /* Ajusta a margem do link */
+    margin-bottom: 10px; /* Ajusta a margem do link */
+  }
+}
+
+.message-box {
+  display: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
