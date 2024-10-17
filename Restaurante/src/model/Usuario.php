@@ -2,15 +2,17 @@
     namespace App\model;
 
     class Usuario{
+        private $id;
         private $nome;
         private $email;
+        private $telefone;
         private $senha;
 
-        public function __construct($nome, $email, $senha){
-            $this->nome = $nome;
-            $this->email = $email;
-            $this->senha = $senha;
-        } 
+       // public function __construct($nome, $email, $senha){
+       //     $this->nome = $nome;
+       //     $this->email = $email;
+         //   $this->senha = $senha;
+        //} 
 
         public function getNome(){
             return $this->nome;
