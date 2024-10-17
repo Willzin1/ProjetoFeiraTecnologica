@@ -1,10 +1,14 @@
+<?php include 'part_view_header.php';
+      include 'part_view_header_nav.php';
+?>
+
 <section id="menu">
             <h2 class="section-title">Cardápio</h2>
             <h3 class="section-subtitle">Entrada</h3>
             <div id="dishes">
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                         Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -23,7 +27,7 @@
 
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                          Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -41,7 +45,7 @@
                 </div>
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                         Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -60,7 +64,7 @@
                 </div>
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                          Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -90,7 +94,7 @@
             <div id="dishes">
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                         Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -110,7 +114,7 @@
 
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                         Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -130,7 +134,7 @@
 
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                         Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -149,7 +153,7 @@
 
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                          Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -178,7 +182,7 @@
             <div id="dishes">
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                         Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -198,7 +202,7 @@
 
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                         Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -216,7 +220,7 @@
                 </div>
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Cheesecake</h3>
                     <span class="dish-description">
                          Ingredientes: Caqui
@@ -233,7 +237,7 @@
 
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                         Ingredientes: framboesas, banana e clara de ovo
@@ -259,7 +263,7 @@
             <div id="dishes">
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                         Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -279,7 +283,7 @@
 
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                         Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -299,7 +303,7 @@
 
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                         Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -318,7 +322,7 @@
 
                 <div class="dish">
                     <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                    <img src="views/Assets/Imagens/dish.png" class="dish-image" alt="">
+                    <img src="Assets/Imagens/dish.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
                          Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -337,3 +341,5 @@
                <!--------- Adicionr mais pratos --------->
             </div>
         </section>
+
+        <?php include "part_view_footer.php"; ?> 

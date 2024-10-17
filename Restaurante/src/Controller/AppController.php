@@ -13,3 +13,7 @@
     if ($action === "index"){
         $usuarioCrudController->index();
     }
+
+    if ($action === 'cardapio'){
+        $usuarioCrudController->cardapio();
+    }

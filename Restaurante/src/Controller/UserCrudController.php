@@ -10,7 +10,7 @@
         }
 
         public function index(){
-            header("Location: /../views/user_crud_create.php");
+            header("Location: /../index.php");
         }
 
         public function cardapio(){

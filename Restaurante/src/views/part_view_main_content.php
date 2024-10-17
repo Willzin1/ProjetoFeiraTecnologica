@@ -1,4 +1,5 @@
 <!-- ALGO -->
+<main>
     <section id="home">
         <div class="shape"></div>
             <div id="cta">
@@ -236,3 +237,4 @@
             </button>
         </div>
     </section>
+</main>    
