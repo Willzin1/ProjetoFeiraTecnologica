@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="src/styles/cadastro.css"> <!-- Link para o CSS -->
+
+    <!-- Adicionando estilos para o balão -->
+    <style>
+        .message-box {
+            display: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body class="cadastro-page">
+    <div class="cadastro-container">
+        <i class="fa-solid fa-leaf" id="nav_cad"></i>
+        <div class="sustenta"><strong><span>SUSTENTA FOOD</span></strong></div>
+
+        <!-- Caixa de mensagem -->
+        <div id="message-box" class="message-box"></div>
+
+        <form action="cadastrar.php" method="post" class="cadastro-form">
+            <h1 class="cadastro-title">Cadastre-se</h1>
+            <label for="nome" class="cadastro-label">Nome:</label>
+            <input type="text" id="nome" name="nome" class="cadastro-input" required>
+            
+            <label for="email" class="cadastro-label">Email:</label>
+            <input type="email" id="email" name="email" class="cadastro-input" required>
+            
+            <label for="telefone" class="cadastro-label">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" class="cadastro-input" required>
+            
+            <label for="senha" class="cadastro-label">Senha:</label>
+            <input type="password" id="senha" name="senha" class="cadastro-input" required>
+            
+            <button type="submit" class="cadastro-button">Cadastrar</button>
+        </form>
+
+        <p class="cadastro-link">Já tem uma conta? <a href="perfil.html" class="link-login">Faça login</a></p>
+    </div>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
