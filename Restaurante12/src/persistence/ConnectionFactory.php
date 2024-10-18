@@ -8,7 +8,7 @@
         public static function getConnection(){
             if (self::$connection == null){
                 $hostname = "localhost";
-                $bancodedados = "Teste"; // Nome do banco de dados que será criado
+                $bancodedados = "Testando"; // Nome do banco de dados que será criado
                 $usuario = "root"; 
                 $senha = "";
 

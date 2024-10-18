@@ -1,0 +1,65 @@
+
+/* Cores */
+:root {
+    --color-primary-1: #fff9ea;
+    --color-primary-2: #ffe8b4;
+    --color-primary-3: #f8d477;
+    --color-primary-4: #ffe100;
+    --color-primary-5: #ffcb45;
+    --color-primary-6: #e9a209;
+    --color-secundary-1: #2a4d1c;
+    --color-secundary-2: #ff0000;
+    --color-neutral-0: #fff;
+    --color-neutral-1: #1d1d1d;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+section {
+    padding: 28px 8%;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+#minhasReservas {
+     /* Fundo neutro para a seção */
+    border-radius: 10px;
+    padding: 20px; /* Padding adicional para a seção */
+}
+
+.reservations {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 16px; /* Espaçamento entre as reservas */
+}
+
+.reservation {
+    background-color: var(--color-neutral-0); /* Fundo neutro para cada reserva */
+    border-radius: 10px;
+    padding: 16px;
+    width: calc(25% - 16px); /* Até quatro reservas por linha */
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+/* Responsividade */
+@media screen and (max-width: 800px) {
+    .reservation {
+        width: calc(50% - 16px); /* Duas reservas por linha */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .reservation {
+        width: 100%; /* Uma reserva por linha */
+    }
+}

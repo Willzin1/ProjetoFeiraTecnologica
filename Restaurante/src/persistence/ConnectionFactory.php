@@ -8,11 +8,11 @@
         public static function getConnection(){
             if (self::$connection == null){
                 $hostname = "localhost";
-                $bancodedados = "Teste"; // Nome do banco de dados que será criado
+                $dbName = "Testando"; // Nome do banco de dados que será criado
                 $usuario = "root"; 
                 $senha = "";
 
-                self::$connection = new \mysqli($hostname, $usuario, $senha, $bancodedados);
+                self::$connection = new \mysqli($hostname, $usuario, $senha, $dbName);
             }    
             
             return self::$connection;

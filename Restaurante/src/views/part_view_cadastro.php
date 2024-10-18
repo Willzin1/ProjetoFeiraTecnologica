@@ -1,8 +1,10 @@
-<?php include 'part_view_header.php';
-      include 'part_view_header_nav.php';
-?>
+    <?php
+    include 'part_view_header.php';
+    include 'part_view_header_nav.php';
 
-<div id="menu">
+    ?>
+
+    <div id="menu">
         <div class="login-container">
             <h1>Crie sua conta.</h1>
             <form action="./../Controller/AppController.php?rota=UserCrudController.php&action=create" method="post">
@@ -22,7 +24,7 @@
                     <label for="senha">Senha:</label>
                     <input type="password" id="senha" name="senha" required>
                 </div>
-              
+
                 <button type="submit" class="shadow__btn">Cadastrar</button>
                 <BR>
             </form>
@@ -32,4 +34,4 @@
         </div>
     </div>
 
-<?php include 'part_view_footer.php'; ?>
+    <?php include 'part_view_footer.php'; ?>

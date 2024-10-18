@@ -14,6 +14,14 @@
          //   $this->senha = $senha;
         //} 
 
+        public function getId(){
+            return $this->id;
+        }
+
+        public function getTelefone(){
+            return $this->telefone;
+        }
+
         public function getNome(){
             return $this->nome;
         }
@@ -36,5 +44,11 @@
 
         public function setSenha($senha){
             $this->senha = $senha;
+        }
+        public function setTelefone($telefone){
+            $this->telefone = $telefone;
+        }
+        public function setId($id){
+            $this->id = $id;
         }
     }

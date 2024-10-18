@@ -11,29 +11,30 @@
     $conn = DBConnection::getInstance(); // Conexão com o banco
     $usuarioCrudController = new UserCrudController($conn);
     
-    if($action === 'index'){ 
-        $usuarioCrudController->index();
-    }else if($action === 'cardapio'){ 
-        $usuarioCrudController->cardapio();
-    }else if($action === 'create' && $request_method === 'POST'){
+    if($action === 'index') $usuarioCrudController->index();
+
+    if($action === 'cardapio') $usuarioCrudController->cardapio();
+
+    if($action === 'create' && $request_method === 'POST'){
         $nome = $_POST['nome'] ?? null;
         $email = $_POST['email'] ?? null;
         $telefone = $_POST['telefone'] ?? null;
         $senha = $_POST['senha'] ?? null;
         
-        $teste = $usuarioCrudController->create($nome, $email, $telefone, $senha);
-    } else if($action === 'tela-cadastro'){
-        $usuarioCrudController->cadastro();
-    }else if($action === 'tela-login'){
-        $usuarioCrudController->login();
+        $usuarioCrudController->create($nome, $email, $telefone, $senha);
     }
+
+    if($action === 'tela-cadastro') $usuarioCrudController->cadastro();
+    
+    if($action === 'tela-login') $usuarioCrudController->login();
+
+    if($action === 'perfil') $usuarioCrudController->perfil();
     
     
-     else if($action === 'logar' && $request_method === 'POST') {
-        $email = $_POST['email'] ?? null;
-        $senha = $_POST['senha'] ?? null;
+    if($action === 'logar' && $request_method === 'POST') {
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
         $usuario = $usuarioCrudController->logar($email, $senha);
-    
-        var_dump($usuarioCrudController->getNome());
+        
     }
         

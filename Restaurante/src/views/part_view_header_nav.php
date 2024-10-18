@@ -14,7 +14,7 @@
                 <a href="#testimonials">Avaliações</a>
             </li>
             <li class="nav-item">
-                <a href="../Controller/AppController.php?rota=UserCrudController.php&action=tela-cadastro">Perfil</a>
+                <a href="../Controller/AppController.php?rota=UserCrudController.php&action=perfil">Perfil</a>
             </li>
         </ul>
 
@@ -39,7 +39,7 @@
                 <a href="#testimonials">Avaliações</a>
             </li>
             <li class="nav-item">
-                <a href="../Controller/AppController.php?rota=UserCrudController.php&action=tela-cadastro">Perfil</a>
+                <a href="../Controller/AppController.php?rota=UserCrudController.php&action=perfil">Perfil</a>
             </li>
         </ul>
     <!-- ESSE BOTÃO FICA NO MODO "MOBILE" -->

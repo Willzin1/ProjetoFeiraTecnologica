@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['usuario_id'] = $usuario_id;
 
         // Redireciona para o painel do usuário
-        header("Location: ./view/pages/usuario.php");
+        header("Location: ./../reservar.php");
         exit();
     } else {
         $erro = "Email ou senha incorretos.";
