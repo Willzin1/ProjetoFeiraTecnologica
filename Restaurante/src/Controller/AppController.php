@@ -22,19 +22,18 @@
         $senha = $_POST['senha'] ?? null;
         
         $teste = $usuarioCrudController->create($nome, $email, $telefone, $senha);
-    } else if($action === 'cadastro' && $request_method === 'POST'){
+    } else if($action === 'tela-cadastro'){
         $usuarioCrudController->cadastro();
-    }else if($action === 'login' && $request_method === 'POST') {
+    }else if($action === 'tela-login'){
+        $usuarioCrudController->login();
+    }
+    
+    
+     else if($action === 'logar' && $request_method === 'POST') {
         $email = $_POST['email'] ?? null;
         $senha = $_POST['senha'] ?? null;
-        $usuario = $usuarioCrudController->login($email, $senha);
+        $usuario = $usuarioCrudController->logar($email, $senha);
     
-        if ($usuario) {
-            session_start();
-            $_SESSION['usuario'] = $usuario; // Armazena o usuário na sessão
-            header("Location: ./../index.php"); // Redireciona para a página inicial
-            exit; // Para evitar a execução do resto do script
-        } else {
-            echo "Email ou senha incorretos!"; // Mensagem de erro
-        }
+        var_dump($usuarioCrudController->getNome());
     }
+        

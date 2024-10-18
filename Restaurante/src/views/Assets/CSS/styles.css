@@ -5,7 +5,8 @@
 @import url('testimonials.css');
 @import url('footer.css');
 @import url('perfil.css'); /* criar pagina do perfil */
-@import url('cadastro.css'); /* criar pagina do cadastro */
+@import url('cadastro.css');
+@import url('profile.css'); /* criar pagina do cadastro */
 /*se necessário criar mais*/ 
 
 
@@ -16,7 +17,7 @@
     --color-primary-4: #ffe100;
     --color-primary-5: #ffcb45;
     --color-primary-6: #e9a209;
-    --color-secundary-1: #2a4d1c;
+    --color-secundary-1: #c3ffab;
     --color-secundary-2: #ff0000;
 
     --color-neutral-0: #fff;
@@ -44,7 +45,7 @@ section {
 
 .btn-default {
     border: none;
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: center;
     background-color: var(--color-primary-5);
@@ -92,3 +93,15 @@ section {
 .section-subtitle {
     font-size: 2.1875rem;
 } 
+
+.message-box {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}

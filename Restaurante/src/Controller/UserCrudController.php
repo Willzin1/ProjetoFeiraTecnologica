@@ -16,6 +16,10 @@
             header("Location: /../views/part_view_cadastro.php");
         }
 
+        public function login(){
+            header("Location: /../views/part_view_login.php");
+        }
+
         public function index(){
             header("Location: /../index.php");
         }
@@ -53,15 +57,15 @@
             return $stmt->fetchAll(PDO::FETCH_CLASS, Usuario::class);
         }
 
-        public function login($email, $senha){
+        public function logar($email, $senha){
             $stmt = $this->pdo->prepare("SELECT * FROM usuario WHERE email = :email");
             $stmt->execute(['email' => $email]);
             $usuario = $stmt->fetchObject(Usuario::class);
 
             if($usuario && password_verify($senha, $usuario->getSenha())){
-                return $usuario;
+                header("Location: ./../index.php");
+                exit;
             }
-
-            return false;
+            return null;
         }
     }
