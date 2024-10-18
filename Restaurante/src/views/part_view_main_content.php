@@ -1,4 +1,39 @@
-<main id="content">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>SUSTENTA FOOD</title>
+    </head>
+<body>
+    <header>
+        <body id="top">
+        <nav id="navbar">
+            <i class="fa-solid fa-leaf" id="nav_logo"><br>SUSTENTA<BR>FOOD</i>
+            <ul id="nav_list">
+                <li class="nav-item active"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="menu.html">Cardápio</a></li>
+                <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+                <li class="nav-item"><a href="perfil.html">Perfil</a></li>
+            </ul>
+            <button class="btn-default">Faça sua reserva aqui</button>
+            <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="menu.html">Cardápio</a></li>
+                <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+                <li class="nav-item"><a href="#perfil">Perfil</a></li>
+            </ul>
+            <button class="btn-default">RESERVA</button>
+        </div>
+    </header>
+    <main id="content">
         <section id="home">
             <div class="shape"></div>
             <div id="cta">
@@ -18,21 +53,21 @@
                 </div>
             </div>
             <div id="banner">
-                <img src="./views/Assets/Imagens/hero.png" alt="">
+                <img src="src/images/hero.png" alt="">
             </div>
         </section>
         <section id="menu">
             <h2 class="section-title">Favoritos da Galera</h2>
             <h3 class="section-subtitle">OS MAIS PEDIDOS</h3>
-            <div id="dishes">
-                <div class="dish">
-                    <div class="dish-inner">
-                        <div class="dish-front">
-                            <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                            <img src="./views/Assets/Imagens/dish.png" class="dish-image" alt="">
-                            <h3 class="dish-title">Bolo de Abacaxi</h3>
-                            <span class="dish-description">Experimente este irresistível bolo de abacaxi! Além de fofo e delicioso, é rico em vitamina C</span>
-                            <div class="dish-rate">
+            <div id="pratos">
+                <div class="prato">
+                    <div class="prato-inner">
+                        <div class="prato-front">
+                            <div class="prato-heart"><i class="fa-solid fa-heart"></i></div>
+                            <img src="src/images/dish.png" class="prato-image" alt="">
+                            <h3 class="prato-title">Bolo de Abacaxi</h3>
+                            <span class="prato-description">Experimente este irresistível bolo de abacaxi! Além de fofo e delicioso, é rico em vitamina C</span>
+                            <div class="prato-rate">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -40,26 +75,24 @@
                                 <i class="fa-solid fa-star"></i>
                                 <span>(100+)</span>
                             </div>
-                            <div class="dish-price">
-                                <!-- <button class="btn-default"><h4><span>MAIS INFORMAÇÕES</span></h4></button> -->
-                            </div>
+                            
                         </div>
-                        <div class="dish-back">
-                            <div class="dish-details">
+                        <div class="prato-back">
+                            <div class="prato-details">
                                 <p>Descubra o sabor do aproveitamento total com nosso Bolo de Abacaxi, onde cada pedaço conta uma história de sustentabilidade. Utilizando as cascas do abacaxi, transformamos um ingrediente muitas vezes descartado em uma deliciosa base que exalta o frescor tropical.</p>
                                 <!-- <button class="btn-default"><h4>VOLTA</h4></button> -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="dish">
-                    <div class="dish-inner">
-                        <div class="dish-front">
-                            <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                            <img src="./views/Assets/Imagens/dish2.png" class="dish-image" alt="">
-                            <h3 class="dish-title">Creme de pepino e couve-flor</h3>
-                            <span class="dish-description">Nossa refrescante Sopa Fria de Pepino e Couve-Flor, uma combinação perfeita de sabores leves e aromáticos</span>
-                            <div class="dish-rate">
+                <div class="prato">
+                    <div class="prato-inner">
+                        <div class="prato-front">
+                            <div class="prato-heart"><i class="fa-solid fa-heart"></i></div>
+                            <img src="src/images/dish2.png" class="prato-image" alt="">
+                            <h3 class="prato-title">Creme de pepino e couve-flor</h3>
+                            <span class="prato-description">Nossa refrescante Sopa Fria de Pepino e Couve-Flor, uma combinação perfeita de sabores leves e aromáticos</span>
+                            <div class="prato-rate">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -67,26 +100,24 @@
                                 <i class="fa-solid fa-star"></i>
                                 <span>(50+)</span>
                             </div>
-                            <div class="dish-price">
-                                <!-- <button class="btn-default"><h4><span>MAIS INFORMAÇÕES</span></h4></button> -->
-                            </div>
+                            
                         </div>
-                        <div class="dish-back">
-                            <div class="dish-details">
+                        <div class="prato-back">
+                            <div class="prato-details">
                                 <p>Uma sopa que celebra a leveza e a simplicidade dos ingredientes, perfeita para dias quentes e momentos de descontração</p>
                                 <!-- <button class="btn-default"><h4>VOLTA</h4></button> -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="dish">
-                    <div class="dish-inner">
-                        <div class="dish-front">
-                            <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                            <img src="./views/Assets/Imagens/dish3.png" class="dish-image" alt="">
-                            <h3 class="dish-title">Espaguete com pesto e burrata</h3>
-                            <span class="dish-description">Uma refeição sem glúten, simples e saborosa</span>
-                            <div class="dish-rate">
+                <div class="prato">
+                    <div class="prato-inner">
+                        <div class="prato-front">
+                            <div class="prato-heart"><i class="fa-solid fa-heart"></i></div>
+                            <img src="src/images/dish3.png" class="prato-image" alt="">
+                            <h3 class="prato-title">Espaguete com pesto e burrata</h3>
+                            <span class="prato-description">Uma refeição sem glúten, simples e saborosa</span>
+                            <div class="prato-rate">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -94,26 +125,24 @@
                                 <i class="fa-solid fa-star"></i>
                                 <span>(20+)</span>
                             </div>
-                            <div class="dish-price">
-                                <!-- <button class="btn-default"><h4><span>MAIS INFORMAÇÕES</span></h4></button> -->
-                            </div>
+                            
                         </div>
-                        <div class="dish-back">
-                            <div class="dish-details">
+                        <div class="prato-back">
+                            <div class="prato-details">
                                 <p>Desperte os seus sentidos com este vibrante prato de Esparguete ao Pesto, onde a simplicidade encontra a sofisticação. O esparguete, cozido à perfeição, é envolto em um pesto aromático, complementado por tomates frescos e uma generosa porção de rúcula, que adiciona um toque de frescor e crocância</p>
                                 <!-- <button class="btn-default"><h4>VOLTA</h4></button> -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="dish">
-                    <div class="dish-inner">
-                        <div class="dish-front">
-                            <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                            <img src="./views/Assets/Imagens/dish4.png" class="dish-image" alt="">
-                            <h3 class="dish-title">Pizza de frigideira com requeijão e legumes</h3>
-                            <span class="dish-description">Uma pizza sem glúten ideal para as crianças</span>
-                            <div class="dish-rate">
+                <div class="prato">
+                    <div class="prato-inner">
+                        <div class="prato-front">
+                            <div class="prato-heart"><i class="fa-solid fa-heart"></i></div>
+                            <img src="src/images/dish4.png" class="prato-image" alt="">
+                            <h3 class="prato-title">Pizza de frigideira com requeijão e legumes</h3>
+                            <span class="prato-description">Uma pizza sem glúten ideal para as crianças</span>
+                            <div class="prato-rate">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -121,12 +150,10 @@
                                 <i class="fa-solid fa-star"></i>
                                 <span>(10+)</span>
                             </div>
-                            <div class="dish-price">
-                                <!-- <button class="btn-default"><h4><span>MAIS INFORMAÇÕES</span></h4></button> -->
-                            </div>
+                            
                         </div>
-                        <div class="dish-back">
-                            <div class="dish-details">
+                        <div class="prato-back">
+                            <div class="prato-details">
                                 <p>Descubra a deliciosa harmonia de sabores da nossa Pizza de Legumes Grelhados! Começamos com uma base de massa perfeitamente dourada, pincelada com uma mistura aromática de azeite, orégãos, tomilho e alho, que proporciona um sabor irresistível.</p>
                                 <!-- <button class="btn-default"><h4>VOLTA</h4></button> -->
                             </div>
@@ -136,13 +163,13 @@
             </div>
         </section>
         <section id="testimonials">
-            <img src="./views/Assets/Imagens/chef.png" id="testimonial_chef" alt="">
+            <img src="src/images/chef.png" id="testimonial_chef" alt="">
             <div id="testimonials_content">
                 <h2 class="section-title">Depoimentos</h2>
                 <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
                 <div id="feedbacks">
                     <div class="feedback">
-                        <img src="./views/Assets/Imagens/avatar2.jfif" class="feedback-avatar" alt="">
+                        <img src="src/images/avatar2.jfif" class="feedback-avatar" alt="">
                         <div class="feedback-content">
                             <p><b>Felipe Dutra</b>
                                 <span>
@@ -157,7 +184,7 @@
                         </div>
                     </div>
                     <div class="feedback">
-                        <img src="./views/Assets/Imagens/avatar3.jfif" class="feedback-avatar" alt="">
+                        <img src="src/images/avatar3.jfif" class="feedback-avatar" alt="">
                         <div class="feedback-content">
                             <p><b>Henrique Silva</b>
                                 <span>
@@ -176,3 +203,17 @@
             </div>
         </section>
     </main>
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+        <div id="footer_items">
+            <span id="copyright">&copy 2024 Feira Tecnológica ETEC ZL</span>
+            <div class="social-media-buttons">
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+   </body>
+</html>
