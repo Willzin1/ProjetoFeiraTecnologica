@@ -195,7 +195,7 @@
                                     <i class="fa-solid fa-star"></i>
                                 </span>
                             </p>
-                            <p>"Ambiente acolhedor, fomos em família e nos sentimos muito bem. Fora a diversidade de sabores e o as opções bem coloridas para a criançada."</p>
+                            <p>"Ambiente acolhedor, fomos em família e nos sentimos muito bem. Fora a diversidade de sabores e as opções bem coloridas para a criançada."</p>
                         </div>
                     </div>
                 </div>
