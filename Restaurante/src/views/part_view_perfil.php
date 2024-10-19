@@ -1,10 +1,16 @@
 <?php
+session_start();
+if (!isset($_SESSION['nome']) || !isset($_SESSION['email']) || !isset($_SESSION['telefone'])) {
+    header("Location: part_view_login.php");
+    exit();
+}else{
+    $usuNome = $_SESSION['nome'];
+    $usuEmail = $_SESSION['email'];
+    $usuTelefone = $_SESSION['telefone'];
+}
+
 include 'part_view_header.php';
 include 'part_view_header_nav.php';
-
-if (!isset($_SESSION)){
-    die("Você não está logado!" . "<a href=\"../Controller/AppController.php?rota=UserCrudController.php&action=tela-login\">Fazer login</a>");
-}
 ?>
 
 <main id="container">
@@ -15,13 +21,15 @@ if (!isset($_SESSION)){
                 <img src="./Assets/Imagens/avatar.png" alt="Foto do Usuário">
             </div>
             <div class="profile-info">
-                <h3>Nome do Usuário</h3>
-                <p><strong>Email:</strong> usuario@example.com</p>
-                <p><strong>Telefone:</strong> (11) 94002-8922</p>
+                <?php echo"<h3>$usuNome</h3>" ?>
+                <?php echo"<p><strong>Email:</strong> $usuEmail</p>"?>
+                <?php echo"<p><strong>Telefone:</strong> $usuTelefone</p>"?>
                 <p><strong>Localização:</strong> São Paulo, SP</p>
                 <button class="btn-default">
                     Editar Perfil
                 </button>
+
+                <a href="./../Controller/AppController.php?rota=UserCrudController&action=sair"> <button class="btn-default">Sair</button></a>
             </div>
         </div>
     </section>

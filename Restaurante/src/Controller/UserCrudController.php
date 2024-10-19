@@ -5,45 +5,53 @@ namespace App\Controller;
 use PDO;
 use App\model\Usuario;
 
-class UserCrudController{
+class UserCrudController
+{
 
     private $pdo;
 
-    public function __construct(PDO $pdo){
+    public function __construct(PDO $pdo)
+    {
         $this->pdo = $pdo;
     }
 
-    public function cadastro(){
+    public function cadastro()
+    {
         header("Location: /../views/part_view_cadastro.php");
     }
 
-    public function login(){
+    public function login()
+    {
         header("Location: /../views/part_view_login.php");
     }
 
-    public function index(){
+    public function index()
+    {
         header("Location: /../index.php");
     }
 
-    public function cardapio(){
+    public function cardapio()
+    {
         header("Location: /../views/part_view_cardapio.php");
     }
 
-    public function create($nome, $email, $telefone, $senha){
+    public function create($nome, $email, $telefone, $senha)
+    {
         $hash = password_hash($senha, PASSWORD_DEFAULT);
         $stmt = $this->pdo->prepare("INSERT INTO usuario (nome, email, telefone, senha) values (:nome, :email, :telefone, :senha)");
-        if($stmt->execute(['nome' => $nome, 'email' => $email, 'telefone' => $telefone, 'senha' => $hash])){
-            //$usuario = new Usuario();
-            //$usuario->setNome($nome);
-            //$usuario->setEmail($email);
-            //$usuario->setSenha($senha);
+        if ($stmt->execute(['nome' => $nome, 'email' => $email, 'telefone' => $telefone, 'senha' => $hash])) {
+            $usuario = new Usuario();
+            $usuario->setNome($nome);
+            $usuario->setEmail($email);
+            $usuario->setTelefone($telefone);
+            $usuario->setSenha($senha);
         }
 
-        if ($stmt){
+        if ($stmt) {
             header("Location: /../views/part_view_login.php");
         }
     }
-/*
+    /*
     public function read($email){
         $stmt = $this->pdo->prepare("SELECT * FROM usuario WHERE email = :email");
         $stmt->execute(['email' => $email]);
@@ -66,45 +74,49 @@ class UserCrudController{
         $stmt = $this->pdo->query("SELECT * FROM usuario");
         return $stmt->fetchAll(PDO::FETCH_CLASS, Usuario::class);
     }
-    */
-
-    /*public function logar($email, $senha) {
-    // Prepara a consulta SQL
-    $stmt = $this->pdo->prepare("SELECT * FROM usuario WHERE email = :email");
-    $stmt->execute([':email' => $email]);
-    $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
-
-
-    // ARRUMAR, CREIO QUE O HASH ESTEJA CONFLITANDO COM A SENHA INFORMADA
-    if($usuario){
-        
-        echo"email existe";
-    } else{
-        echo"email não encontrado";
-    }
-}
    */
-  
-   public function logar($email, $senha) {
-    // Prepara a consulta SQL
-    $stmt = $this->pdo->prepare("SELECT * FROM usuario WHERE email = :email");
-    $stmt->execute([':email' => $email]);
-    $usuario = $stmt->fetchObject(Usuario::class);
 
-    // Verifica se o usuário existe
-    if ($usuario && $senha === $usuario->getSenha()) {
-        session_start();
-        $_SESSION['id'] = $usuario->getId();
-        $_SESSION['nome'] = $usuario->getNome();
-        header("Location: /../index.php");
-        exit;
-    }else{
-        echo"nao logado!";
+    public function logar($email, $senha)
+    {
+        $stmt = $this->pdo->prepare("SELECT * FROM usuario WHERE email = :email");
+        $stmt->execute([':email' => $email]);
+        $usuario = $stmt->fetchObject(Usuario::class);
+
+        if ($usuario) {
+            if (password_verify($senha, $usuario->getSenha())) {
+                if (!isset($_SESSION)) {
+                    session_start();
+                    $_SESSION['id'] = $usuario->getId();
+                    $_SESSION['nome'] = $usuario->getNome();
+                    $_SESSION['email'] = $usuario->getEmail();
+                    $_SESSION['telefone'] = $usuario->getTelefone();
+                    header("Location: /../index.php");
+                    exit;
+                }
+            } else{ //Falta arrumar
+                $_SESSION['error'] = "Email incorreta!";
+                header("Location: /../views/part_view_login.php");
+                exit();
+            }
+        } else { //Falta arrumar
+            $_SESSION['error'] = "Senha incorreta!";
+            header("Location: /../views/part_view_login.php");
+            exit();
+        }
     }
-}
-    
 
-    public function perfil(){
+
+    public function sair()
+    {
+        session_start();
+        session_unset(); // Remove todas as variáveis de sessão
+        session_destroy(); // Destroi a sessão
+        header("Location: /../views/part_view_login.php"); // Redireciona para a tela de login
+        exit;
+    }
+
+    public function perfil()
+    {
         header("Location: ./../views/part_view_perfil.php");
     }
 }

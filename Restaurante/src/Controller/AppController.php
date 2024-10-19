@@ -37,4 +37,8 @@
         $usuario = $usuarioCrudController->logar($email, $senha);
         
     }
+
+    if($action === 'sair'){
+        $usuarioCrudController->sair();
+    }
         
