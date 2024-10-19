@@ -10,7 +10,7 @@ include 'part_view_header_nav.php';
         <div class="login-container">
             <h1>Faça seu login.</h1>
             
-            <form action="./../Controller/AppController.php?rota=UserCrudController.php&action=logar" method="POST">
+            <form action="./../Controller/AppController.php?rota=UserCrudController.php&action=login" method="POST">
                 <div class="grupo-formulario">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
@@ -20,7 +20,7 @@ include 'part_view_header_nav.php';
                     <label for="senha">Senha:</label>
                     <input type="password" id="senha" name="senha" required>
                 </div>
-<!--FALTA CRIAR EU(will) A PARTE CASO O USUÁRIO INSIRA UM EMAIL/SENHA INEXISTENTE OU INCORRETO-->
+<!--FALTA CRIAR EU(will) A PARTE CASO O USUÁRIO INSIRA UM EMAIL/SENHA INEXISTENTE OU INCORRETA-->
                 <button type="submit" class="shadow__btn">Entrar</button>
 
             </form>

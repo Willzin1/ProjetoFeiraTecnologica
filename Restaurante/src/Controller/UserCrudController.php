@@ -10,31 +10,13 @@ class UserCrudController
 
     private $pdo;
 
+    // Método para fazer a conexão com o banco de dados;
     public function __construct(PDO $pdo)
     {
         $this->pdo = $pdo;
     }
 
-    public function cadastro()
-    {
-        header("Location: /../views/part_view_cadastro.php");
-    }
-
-    public function login()
-    {
-        header("Location: /../views/part_view_login.php");
-    }
-
-    public function index()
-    {
-        header("Location: /../index.php");
-    }
-
-    public function cardapio()
-    {
-        header("Location: /../views/part_view_cardapio.php");
-    }
-
+    // Método para criar um usuário e inserir no banco de dados. Irá receber um nome, email, telefone e senha do formulário de cadastro.
     public function create($nome, $email, $telefone, $senha)
     {
         $hash = password_hash($senha, PASSWORD_DEFAULT);
@@ -47,11 +29,10 @@ class UserCrudController
             $usuario->setSenha($senha);
         }
 
-        if ($stmt) {
-            header("Location: /../views/part_view_login.php");
-        }
+        if ($stmt) header("Location: /../views/part_view_login.php");
     }
     /*
+    // 
     public function read($email){
         $stmt = $this->pdo->prepare("SELECT * FROM usuario WHERE email = :email");
         $stmt->execute(['email' => $email]);
@@ -59,12 +40,14 @@ class UserCrudController
         return $stmt->fetch();
     }
 
+    // Método para fazer o update do usuário.
     public function update($email, $novoNome, $novoEmail, $novaSenha){
         $stmt = $this->pdo->prepare("UPDATE usuario SET nome = :nome, email = :newEmail, senha = :senha");
         // $stmt->execute('nome' => $novoNome, 'novoEmail' => $novoEmail, 'senha' => password_hash($novaSenha));
         return $this->read($novoEmail);
     }
 
+    // Método para deletar um usuário.
     public function delete($email){
         $stmt = $this->pdo->prepare("DELETE FROM usuario WHERE email = :email");
         return $stmt->execute(['email' => $email]);
@@ -76,7 +59,8 @@ class UserCrudController
     }
    */
 
-    public function logar($email, $senha)
+   // Método para fazer o login do usuário. Irá receber um email e uma senha que virão do formulário de login.
+    public function login($email, $senha)
     {
         $stmt = $this->pdo->prepare("SELECT * FROM usuario WHERE email = :email");
         $stmt->execute([':email' => $email]);
@@ -105,7 +89,7 @@ class UserCrudController
         }
     }
 
-
+    // Método para sair da sessão do usuário.
     public function sair()
     {
         session_start();

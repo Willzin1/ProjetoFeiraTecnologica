@@ -40,7 +40,7 @@ $(document).ready(function() {
         distance: '20%'
     });
 
-    ScrollReveal().reveal('.dish', {
+    ScrollReveal().reveal('.prato', {
         origin: 'left',
         duration: 2000,
         distance: '20%'
@@ -60,7 +60,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() { /* FUNÇÃO DE GIRO DOS CARDS DE FAVORITO, FAVOR, NÃO MEXER*/
-    $('.dish').click(function() {
+    $('.prato').click(function() {
         $(this).toggleClass('active'); // Ativa ou desativa a rotação
     });
 }); 

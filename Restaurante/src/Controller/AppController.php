@@ -8,13 +8,18 @@
     $action = $_REQUEST['action'] ?? 'index';
     $request_method = $_SERVER['REQUEST_METHOD'];
 
-    $conn = DBConnection::getInstance(); // Conexão com o banco
+    // Conexão com o banco
+    $conn = DBConnection::getInstance();
+
+    // Criando o objeto do CRUD. Irá receber uma conexão como parâmetro.
     $usuarioCrudController = new UserCrudController($conn);
     
-    if($action === 'index') $usuarioCrudController->index();
-
-    if($action === 'cardapio') $usuarioCrudController->cardapio();
-
+    if($action === 'index') header('Location: ./../index.php');
+    if($action === 'cardapio') header('Location: ./../views/part_view_cardapio.php');
+    if($action === 'tela-login') header('Location: ./../views/part_view_login.php');
+    if($action === 'tela-cadastro') header('Location: ./../views/part_view_cadastro.php');
+    if($action === 'perfil') header('Location: ./../views/part_view_perfil.php');
+    
     if($action === 'create' && $request_method === 'POST'){
         $nome = $_POST['nome'] ?? null;
         $email = $_POST['email'] ?? null;
@@ -24,18 +29,10 @@
         $usuarioCrudController->create($nome, $email, $telefone, $senha);
     }
 
-    if($action === 'tela-cadastro') $usuarioCrudController->cadastro();
-    
-    if($action === 'tela-login') $usuarioCrudController->login();
-
-    if($action === 'perfil') $usuarioCrudController->perfil();
-    
-    
-    if($action === 'logar' && $request_method === 'POST') {
+    if($action === 'login' && $request_method === 'POST') {
         $email = $_POST['email'];
         $senha = $_POST['senha'];
-        $usuario = $usuarioCrudController->logar($email, $senha);
-        
+        $usuario = $usuarioCrudController->login($email, $senha);
     }
 
     if($action === 'sair'){

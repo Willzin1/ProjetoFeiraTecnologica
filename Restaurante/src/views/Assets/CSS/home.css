@@ -107,13 +107,13 @@ header.fixed + .shape {
     }
 }
 
-#dishes {
+#pratos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.dish {
+.prato {
     perspective: 1000px;
     margin: 20px;
     width: 500px;  /* Mantendo a largura do card */
@@ -121,7 +121,7 @@ header.fixed + .shape {
     display: flex;
 }
 
-.dish-inner {
+.prato-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -129,7 +129,7 @@ header.fixed + .shape {
     transform-style: preserve-3d;
 }
 
-.dish-front, .dish-back {
+.prato-front, .prato-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -139,7 +139,7 @@ header.fixed + .shape {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.dish-front {
+.prato-front {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,7 +147,7 @@ header.fixed + .shape {
     background-color: #fff;
 }
 
-.dish-back {
+.prato-back {
     transform: rotateY(180deg);
     display: flex;
     align-items: center;
@@ -156,25 +156,36 @@ header.fixed + .shape {
     background-color: #f9f9f9;
 }
 
-.dish.active .dish-inner {
+.prato.active .prato-inner {
     transform: rotateY(180deg);
 }
 
-.dish-image {
+.prato-image {
     width: 100%;
     height: 70%; /* Ajustando altura para manter proporção */
     object-fit: cover;
 }
 
-.dish-details {
+.prato-details {
     padding: 10px;
     text-align: justify;
 }
 
-.dish-title {
-    text-align: center;
-}
-
 .btn-default {
     margin-top: 10px;
+}
+
+.prato-heart {
+    position: absolute;
+    /* background-color: #FFFFFF; ADICIONAR COR ATRÁS DO CORAÇÃO SE ACHARMOS NECESSÁRIO*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: #FF0000;
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
 }
