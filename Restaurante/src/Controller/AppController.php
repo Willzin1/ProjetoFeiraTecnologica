@@ -36,6 +36,6 @@
     }
 
     if($action === 'sair'){
-        $usuarioCrudController->sair();
+        $usuarioCrudController->logout();
     }
-        
+?>        

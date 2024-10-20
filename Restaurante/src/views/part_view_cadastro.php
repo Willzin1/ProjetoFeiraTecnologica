@@ -1,9 +1,10 @@
-    <?php
-    include 'part_view_header.php';
-    include 'part_view_header_nav.php';
+<?php
+session_start();
 
-    ?>
-
+include 'part_view_header.php';
+include 'part_view_header_nav.php';
+?>
+<main>
     <div id="menu">
         <div class="login-container">
             <h1>Crie sua conta.</h1>
@@ -15,6 +16,12 @@
                 <div class="grupo-formulario">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
+
+                    <?php if (isset($_SESSION['error'])): ?>
+                        <p class="msg-erro"><?php echo $_SESSION['error'];
+                                            unset($_SESSION['error']); ?></p>
+                    <?php endif; ?>
+
                 </div>
                 <div class="grupo-formulario">
                     <label for="telefone">Telefone:</label>
@@ -33,5 +40,6 @@
             </div>
         </div>
     </div>
+</main>
 
-    <?php include 'part_view_footer.php'; ?>
+<?php include 'part_view_footer.php'; ?>
