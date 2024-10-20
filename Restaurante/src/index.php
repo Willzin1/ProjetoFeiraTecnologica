@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include './views/part_view_header.php' ?>
-    <title>SUSTENTÁVEL SITE</title>
+    <title>SUSTENTA FOOD</title>
 </head>
 <body>
     <!--HEADER-->
