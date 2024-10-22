@@ -1,4 +1,4 @@
-<!-- ALGO -->  
+<!-- Onde irá ficar a NAVBAR -->  
 <header>
     <nav id="navbar">
         <a href="../Controller/AppController.php?rota=UserCrudController.php&action=index"><i class="fa-solid fa-leaf" id="nav_logo"><br>SUSTENTA<BR>FOOD</i></a>

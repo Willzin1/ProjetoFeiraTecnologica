@@ -21,10 +21,10 @@
     if($action === 'perfil') header('Location: ./../views/part_view_perfil.php');
     
     if($action === 'create' && $request_method === 'POST'){
-        $nome = $_POST['nome'] ?? null;
-        $email = $_POST['email'] ?? null;
-        $telefone = $_POST['telefone'] ?? null;
-        $senha = $_POST['senha'] ?? null;
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $telefone = $_POST['telefone'];
+        $senha = $_POST['senha'];
         
         $usuarioCrudController->create($nome, $email, $telefone, $senha);
     }

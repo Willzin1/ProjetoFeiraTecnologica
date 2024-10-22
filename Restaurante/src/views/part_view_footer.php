@@ -1,4 +1,4 @@
-<!-- ALGO -->
+<!-- Onde irá ficar o FOOTER -->
 <footer>
     <img src="<?=  'http://' . $_SERVER['HTTP_HOST'] . "/views/Assets/Imagens/wave.svg" ?>" alt="">
 

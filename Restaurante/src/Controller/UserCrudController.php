@@ -18,9 +18,10 @@ class UserCrudController
     // Método para criar um usuário e inserir no banco de dados. Irá receber um nome, email, telefone e senha do formulário de cadastro.
     public function create($nome, $email, $telefone, $senha)
     {
+        $usuExiste = $this->read($email);
+        session_start();
         // Condição para se caso o email já existir. Chamo o método e passo o parâmetro do email que foi inserido no formulário.
-        if ($this->read($email)) {
-
+        if ($usuExiste) {
             $_SESSION['error'] = "E-mail já cadastrado, tente novamente!";
             $_POST['email'] = $email;
             header("Location: /../views/part_view_cadastro.php");

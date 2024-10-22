@@ -18,6 +18,9 @@
         <div id="menu">
             <div class="login-container">
                 <h1>Crie sua conta.</h1>
+                <?php if (isset($_SESSION['error'])): ?>
+                    <p class="msg-erro"><?php echo $_SESSION['error']; unset($_SESSION['error']); ?></p>
+                <?php endif; ?>
                 <form action="./../Controller/AppController.php?rota=UserCrudController.php&action=create" method="post">
                     <div class="grupo-formulario">
                         <label for="nome">Nome:</label>
@@ -27,10 +30,6 @@
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
 
-                        <?php if (isset($_SESSION['error'])): ?>
-                            <p class="msg-erro"><?php echo $_SESSION['error'];
-                                                unset($_SESSION['error']); ?></p>
-                        <?php endif; ?>
 
                     </div>
                     <div class="grupo-formulario">
