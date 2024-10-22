@@ -11,7 +11,7 @@
     <main id="content-reserva">
         <div class="container">
             <h1>Reserva de Mesa</h1>
-            <form action="./../../reservar.php" method="POST" onsubmit="return validarReserva();">
+            <form action="./../Controller/AppController.php?rota=ReservaCrudController&action=createReserva" method="POST" onsubmit="return validarReserva();">
                 <div class="grupo-formulario">
                     <label for="data">Data:</label>
                     <input type="text" id="data" name="data" required>

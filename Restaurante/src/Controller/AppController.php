@@ -3,6 +3,7 @@
 
     use App\persistence\DBConnection;
     use App\Controller\UserCrudController;
+    use App\Controller\ReservaCrudController;
 
     $rota = $_REQUEST['rota'] ?? 'home';
     $action = $_REQUEST['action'] ?? 'index';
@@ -13,6 +14,7 @@
 
     // Criando o objeto do CRUD. Irá receber uma conexão como parâmetro.
     $usuarioCrudController = new UserCrudController($conn);
+    $reservaCrudController = new ReservaCrudController($conn);
     
     if($action === 'index') header('Location: ./../index.php');
     if($action === 'cardapio') header('Location: ./../views/part_view_cardapio.php');
@@ -37,5 +39,13 @@
 
     if($action === 'sair'){
         $usuarioCrudController->logout();
+    }
+
+    if($action === 'createReserva' && $request_method === 'POST'){
+        $dataReserva = $_POST['data'];
+        $horaReserva = $_POST['hora'];
+        $pessoasReserva = $_POST['quantidade_cadeiras'];
+
+        $reservaCrudController->create($dataReserva, $horaReserva, $pessoasReserva);
     }
 ?>        
