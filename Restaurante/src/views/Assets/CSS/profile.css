@@ -78,6 +78,7 @@ h1.profile-title {
   background-color: var(--color-primary-6);
   color: var(--color-neutral-1);
   padding: 10px;
+  margin: 5px;
   border: none;
   border-radius: 28px;
   cursor: pointer;

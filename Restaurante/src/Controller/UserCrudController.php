@@ -22,8 +22,7 @@ class UserCrudController
         session_start();
         // Condição para se caso o email já existir. Chamo o método e passo o parâmetro do email que foi inserido no formulário.
         if ($usuExiste) {
-            $_SESSION['error'] = "E-mail já cadastrado, tente novamente!";
-            $_POST['email'] = $email;
+            $_SESSION['error'] = "E-mail já cadastrado, tente novamente!"; 
             header("Location: /../views/part_view_cadastro.php");
             exit();
         }
@@ -45,14 +44,25 @@ class UserCrudController
         return $stmt->fetch();
     }
 
-    /*
+    
     // Método para fazer o update do usuário.
-    public function update($email, $novoNome, $novoEmail, $novaSenha){
-        $stmt = $this->pdo->prepare("UPDATE usuario SET nome = :nome, email = :newEmail, senha = :senha");
-        // $stmt->execute('nome' => $novoNome, 'novoEmail' => $novoEmail, 'senha' => password_hash($novaSenha));
-        return $this->read($novoEmail);
+    public function update($novoNome, $novoTelefone, $email){
+        $usuExiste = $this->read($email);
+        session_start();
+
+        if($usuExiste){
+        $stmt = $this->pdo->prepare("UPDATE usuario SET nome = :nome, telefone = :novoTelefone WHERE email = :email");
+        $stmt->execute(['nome' => $novoNome, 'novoTelefone' => $novoTelefone, 'email' => $email]);
+
+        $_SESSION['nome'] = $novoNome;
+        $_SESSION['telefone'] = $novoTelefone;
+
+        header("Location: ./../views/part_view_perfil.php");
+        exit();
+        }
     }
 
+    /*
     // Método para deletar um usuário.
     public function delete($email){
         $stmt = $this->pdo->prepare("DELETE FROM usuario WHERE email = :email");
@@ -69,8 +79,8 @@ class UserCrudController
     public function login($email, $senha)
     {
         $usuario = $this->read($email);
-
         session_start();
+
         // Condição para verificar se o email existe no banco de dados.
         if ($usuario) {
             // Condição para verificar se a senha existe no banco de dados.

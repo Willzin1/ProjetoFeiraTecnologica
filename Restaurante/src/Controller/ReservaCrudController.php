@@ -15,24 +15,25 @@ class ReservaCrudController
         $this->pdo = $pdo;
     }
 
-    public function create ($dataReserva, $horaReserva, $pessoasReserva){
+    public function create($dataReserva, $horaReserva, $pessoasReserva)
+    {
         session_start();
-            $id_usuario = $_SESSION['id'];
-
+        $id_usuario = $_SESSION['id'];
 
         $stmt = $this->pdo->prepare("INSERT INTO reservas (data_reserva, hora_reserva, numero_pessoas, id_usuario) VALUES (:data, :hora, :pessoas, :id_usuario)");
-        if($stmt->execute(['data' => $dataReserva, 'hora' => $horaReserva, 'pessoas' => $pessoasReserva, 'id_usuario' => $id_usuario])){
+        if ($stmt->execute(['data' => $dataReserva, 'hora' => $horaReserva, 'pessoas' => $pessoasReserva, 'id_usuario' => $id_usuario])) {
             header("Location: ./../views/part_view_perfil.php");
             exit();
         }
     }
 
-    public function read($id_usuario)
+    /*
+   public function read($id_usuario)
     {
         $stmt = $this->pdo->prepare("SELECT * FROM reservas WHERE id_usuario = :id_usuario");
         $stmt->execute(['id_usuario' => $id_usuario]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, Reserva::class);
-        return $stmt->fetch();
+        return $stmt->fetchAll();
     }
 
     public function update($id_usuario, $novaData, $novaHora, $novaPessoas){
@@ -44,4 +45,6 @@ class ReservaCrudController
         $stmt = $this->pdo->prepare("DELETE FROM reservas WHERE id_usuario = :id_usuario");
         return $stmt->execute(['id_usuario' => $id_usuario]);
     }
+
+    */
 }

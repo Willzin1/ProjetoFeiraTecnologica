@@ -29,8 +29,6 @@
                     <div class="grupo-formulario">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
-
-
                     </div>
                     <div class="grupo-formulario">
                         <label for="telefone">Telefone:</label>

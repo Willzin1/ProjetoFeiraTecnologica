@@ -5,8 +5,8 @@
     use App\Controller\UserCrudController;
     use App\Controller\ReservaCrudController;
 
-    $rota = $_REQUEST['rota'] ?? 'home';
-    $action = $_REQUEST['action'] ?? 'index';
+    $rota = $_REQUEST['rota'];
+    $action = $_REQUEST['action'];
     $request_method = $_SERVER['REQUEST_METHOD'];
 
     // Conexão com o banco
@@ -20,9 +20,9 @@
     if($action === 'reserva') header('Location: ./../views/part_view_reserva.php');
     if($action === 'cardapio') header('Location: ./../views/part_view_cardapio.php');
     if($action === 'tela-login') header('Location: ./../views/part_view_login.php');
-    if($action === 'tela-cadastro') header('Location: ./../views/part_view_cadastro.php');
+    if($action === 'tela-cadastro') header('Location: ./../views/part_view_cadastro.php'); 
     if($action === 'perfil') header('Location: ./../views/part_view_perfil.php');
-    
+
     if($action === 'create' && $request_method === 'POST'){
         $nome = $_POST['nome'];
         $email = $_POST['email'];
@@ -36,6 +36,14 @@
         $email = $_POST['email'];
         $senha = $_POST['senha'];
         $usuario = $usuarioCrudController->login($email, $senha);
+    }
+
+    if($action === 'update' && $request_method === 'POST'){
+        $novoNome = $_POST['nome'];
+        $novoTelefone = $_POST['telefone'];
+        $email = $_POST['email'];
+
+        $usuarioCrudController->update($novoNome, $novoTelefone, $email);
     }
 
     if($action === 'sair'){

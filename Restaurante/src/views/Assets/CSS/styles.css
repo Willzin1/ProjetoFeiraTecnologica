@@ -9,7 +9,8 @@
 @import url('profile.css'); /* criar pagina do cadastro */
 @import url('perfilReserva.css');
 @import url('reserva.css');
-/*se necessário criar mais*/ 
+/*se necessário criar mais*/
+@import url('modal.css'); 
 
 
 :root {
@@ -107,3 +108,4 @@ section {
     background-color: #f8d7da;
     color: #721c24;
 }
+

@@ -138,3 +138,16 @@ const iconeOlho = document.getElementById('login-olho');
             messageBox.style.display = 'block';
         }
     };
+
+    /* PARTE PARA EDITAR O PERFIL */
+    function editarPerfil() {
+        // Mostra o modal e o fundo escurecido
+        document.getElementById('modalOverlay').style.display = 'block';
+        document.getElementById('modalEditarPerfil').style.display = 'block';
+    }
+    
+    function fecharModal() {
+        // Esconde o modal e o fundo escurecido
+        document.getElementById('modalOverlay').style.display = 'none';
+        document.getElementById('modalEditarPerfil').style.display = 'none';
+    }
