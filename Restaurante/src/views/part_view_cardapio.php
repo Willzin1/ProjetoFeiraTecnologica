@@ -19,42 +19,38 @@
             <h3 class="section-subtitle">Entrada</h3>
             <div id="dishes">
                 <div class="dish">
-                    <img src="./Assets/Imagens/creme-de-pepino-e-couve-flor.png" class="dish-image" alt="E  rro">
+                    <img src="./Assets/Imagens/cremedepepino.png" class="dish-image" alt="E  rro">
                     <h3 class="dish-title">Creme de pepino e couve-flor</h3>
                     <span class="dish-description">
                         Delicie-se com este creme de pepino e couve-flor, uma entrada leve e saudável,
-                        rica em fibras, vitaminas e antioxidantes, ideal para promover saciedade,
-                        hidratação e suporte ao sistema imunológico.
+                         ideal para promover saciedade sem abrir mão de sabor.
                     </span>
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/creme-de-pepino-e-couve-flor.png" class="dish-image" alt="">
-                    <h3 class="dish-title">Lorem Ipsum</h3>
+                    <img src="./Assets/Imagens/legumes-salteados1.png" class="dish-image" alt="">
+                    <h3 class="dish-title">Legumes Salteados</h3>
                     <span class="dish-description">
-                        Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Esses legumes salteados tornam-se o acompanhamento ideal para qualquer refeição.
                     </span>
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/creme-de-pepino-e-couve-flor.png" class="dish-image" alt="">
-                    <h3 class="dish-title">Lorem Ipsum</h3>
+                    <img src="./Assets/Imagens/salada-de-bagos-com-camarao1.png" class="dish-image" alt="">
+                    <h3 class="dish-title">Salado de Bagos com Camarão</h3>
                     <span class="dish-description">
-                        Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Uma salada de bagos com camarão repleta de sabores frescos. 
+                    Uma opção deliciosa e nutritiva para quem busca uma alimentação equilibrada.
                     </span>
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/creme-de-pepino-e-couve-flor.png" class="dish-image" alt="">
+                    <img src="./Assets/Imagens/gaspacho-de-pepino1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Lorem Ipsum</h3>
                     <span class="dish-description">
-                        Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Gaspacho de pepino é uma sopa fria refrescante, 
+                    com pepino, rúcula e hortelã fresca. Ideal para dias quentes, 
+                    é leve, nutritiva e saudável.
                     </span>
                 </div>
                 <!--------- Adicionr mais pratos --------->
@@ -70,37 +66,32 @@
                     <h3 class="dish-title">Hambúrguer de Salmão com Salada</h3>
                     <span class="dish-description">
                         Experimente um hambúrguer de salmão com abacaxi caramelizado e salada de quinoa.
-                        Uma refeição saudável rica em ômega-3, proteínas e outros nutrientes.
+                        Uma refeição saudávele deliciosa.
                     </span>
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/dish3.png" class="dish-image" alt="">
-                    <h3 class="dish-title">Lorem Ipsum</h3>
+                    <img src="./Assets/Imagens/one-pot-pasta-a-marinheira1.png" class="dish-image" alt="">
+                    <h3 class="dish-title">Linguine negro com amêijoas</h3>
                     <span class="dish-description">
-                        Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Um prato de comida reconfortante e de aspecto original, linguine negro com amêijoas
                     </span>
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/dish.png" class="dish-image" alt="">
-                    <h3 class="dish-title">Lorem Ipsum</h3>
+                    <img src="./Assets/Imagens/polvo-guisado-com-arroz1.png" class="dish-image" alt="">
+                    <h3 class="dish-title">Polvo Guisado com Arroz</h3>
                     <span class="dish-description">
-                        Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    O queridinho da casa, o polvo guisado com arroz vai ser a estrela da refeição. Sabores tradicionais à sua mesa!
                     </span>
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/dish2.png" class="dish-image" alt="">
-                    <h3 class="dish-title">Lorem Ipsum</h3>
+                    <img src="./Assets/Imagens/bacalhau-a-enterro1.png" class="dish-image" alt="">
+                    <h3 class="dish-title">Bacalhau à Enterro</h3>
                     <span class="dish-description">
-                        Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    O Bacalhau à Enterro, um clássico da Páscoa em Portugal,
+                     combina tradição e sabor numa receita simples, com bacalhau, batatas e nabiças
                     </span>
                 </div>
                 <!--------- Adicionr mais pratos --------->
@@ -112,38 +103,38 @@
             <h3 class="section-subtitle">Sobremesas</h3>
             <div id="dishes">
                 <div class="dish">
-                    <img src="./Assets/Imagens/chesecakeManga.png" class="dish-image" alt="">
-                    <h3 class="dish-title">Tiramisu</h3>
+                    <img src="./Assets/Imagens/tarte-de-tres-frutos1.png" class="dish-image" alt="">
+                    <h3 class="dish-title">Tarte de três frutos</h3>
                     <span class="dish-description">
-                        Este tiramisu proteico é a sobremesa ideal para quem busca boa forma,
-                        com alto teor de proteína e baixo teor de açúcar. Fácil e rápido,
-                        é perfeito para um reforço saudável.
+                    A tarte de três frutos combina pêssegos, ameixas e nectarinas numa base crocante, 
+                    criando uma sobremesa equilibrada, doce e refrescante.
                     </span>
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/chesecakeManga.png" class="dish-image" alt="">
-                    <h3 class="dish-title">Cheesecake de Diáspiro </h3>
+                    <img src="./Assets/Imagens/tarte-de-chocolate1.png" class="dish-image" alt="">
+                    <h3 class="dish-title">Tarte de Chocolate Branco e Frutos vermelhos</h3>
                     <span class="dish-description">
-                        Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Se a sua perdição é o chocolate, seguramente esta tarte de chocolate branco 
+                    e frutos vermelhos é uma deliciosa proposta de doce.
                     </span>
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/chesecakeManga.png" class="dish-image" alt="">
-                    <h3 class="dish-title">Cheesecake</h3>
+                    <img src="./Assets/Imagens/geladochocolate-1.png" class="dish-image" alt="">
+                    <h3 class="dish-title">Tarte de Choloate Branco</h3>
                     <span class="dish-description">
-                        Ingredientes: Caqui
+                    Este gelado de chocolate com calda de framboesa é uma deliciosa alternativa para quem tem problemas com a ingestão de produtos lácteos.
                     </span>
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/chesecakeManga.png" class="dish-image" alt="">
-                    <h3 class="dish-title">Lorem Ipsum</h3>
+                    <img src="./Assets/Imagens/pudimCaramelo1.png" class="dish-image" alt="">
+                    <h3 class="dish-title">Pudim de Caramelo</h3>
                     <span class="dish-description">
-                        Ingredientes: framboesas, banana e clara de ovo
+                    O pudim de caramelo com framboesas é uma deliciosa sobremesa
+                     que une a riqueza do caramelo à vivacidade das framboesas.
+                      
                     </span>
                 </div>
                 <!--------- Adicionr mais pratos --------->
@@ -154,41 +145,37 @@
             <h3 class="section-subtitle">Bebidas</h3>
             <div id="dishes">
                 <div class="dish">
-                    <img src="./Assets/Imagens/chesecakeManga.png" class="dish-image" alt="">
+                    <img src="./Assets/Imagens/sumo-de-abacaxi-espinafres-e-pepino2.png" class="dish-image" alt="">
                     <h3 class="dish-title">Granizado de Limão</h3>
                     <span class="dish-description">
-                        Descubra este granizado de limão servido em cascas de limão,
-                        com limoncello e hortelã. Garantimos que não vai sobrar um gole.
+                    Descubra este granizado de limão, com limoncello e hortelã e espinafre. Garantimos que não vai sobrar um gole
                     </span>
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/chesecakeManga.png" class="dish-image" alt="">
-                    <h3 class="dish-title">Bellini</h3>
-                    <span class="dish-description">
-                        Termine um dia de verão com um Bellini,
-                        um cocktail fresco e frutado. Só precisa de prosecco,
-                        pêssego, framboesa e hortelã.
-                    </span>
-                </div>
-
-                <div class="dish">
-                    <img src="./Assets/Imagens/chesecakeManga.png" class="dish-image" alt="">
+                    <img src="./Assets/Imagens/sumo-de-cascas-de-abacaxi1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Pina Colada</h3>
                     <span class="dish-description">
-                        Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Explore uma refrescante e tropical piña colada, 
+                    o famoso coquetel de abacaxi com leite de coco e rum.
                     </span>
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/chesecakeManga.png" class="dish-image" alt="">
-                    <h3 class="dish-title">Lorem Ipsum</h3>
+                    <img src="./Assets/Imagens/Cidreira1.png" class="dish-image" alt="">
+                    <h3 class="dish-title">Changria de Cidreira, Laranja e Vinho Branco</h3>
                     <span class="dish-description">
-                        Ingredientes: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Uma fusão diferente, entre o chá (que vem do Oriente) 
+                    e o vinho (predominante sobretudo no Mediterrânico).
+                    </span>
+                </div>
+
+                <div class="dish">
+                    <img src="./Assets/Imagens/caipirinha-de-melancia1.png" class="dish-image" alt="">
+                    <h3 class="dish-title">Suco de Melânciam</h3>
+                    <span class="dish-description">
+                    Sugerimos este suco de melância com um toque de lima e maple syrup,
+                     uma opção refrescante e leve.
                     </span>
                 </div>
                 <!--------- Adicionr mais pratos --------->
