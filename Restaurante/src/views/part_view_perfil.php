@@ -4,11 +4,7 @@ session_start();
 if (!isset($_SESSION['nome']) || !isset($_SESSION['email']) || !isset($_SESSION['telefone'])) {
     header("Location: part_view_login.php");
     exit();
-} else {
-    $usuNome = $_SESSION['nome'];
-    $usuEmail = $_SESSION['email'];
-    $usuTelefone = $_SESSION['telefone'];
-}
+} 
 ?>
 
 <!DOCTYPE html>
@@ -34,9 +30,9 @@ if (!isset($_SESSION['nome']) || !isset($_SESSION['email']) || !isset($_SESSION[
                 </div>
 
                 <div class="profile-info">
-                    <?php echo "<h3>$usuNome</h3>" ?>
-                    <?php echo "<p><strong>Email:</strong> $usuEmail</p>" ?>
-                    <?php echo "<p><strong>Telefone:</strong> $usuTelefone</p>" ?>
+                    <?= "<h3>" . $_SESSION['nome'] . "</h3>"; ?>
+                    <?= "<p><strong>Email: </strong>" . $_SESSION['email'] . "</p>" ?>
+                    <?= "<p><strong>Telefone: </strong>" . $_SESSION['telefone'] . "</p>" ?>
                     <p><strong>Localização:</strong> São Paulo, SP</p>
                     <button class="btn-default">
                         Editar Perfil
@@ -64,7 +60,7 @@ if (!isset($_SESSION['nome']) || !isset($_SESSION['email']) || !isset($_SESSION[
                     <button class="btn-default" id="cancelarReserva">Cancelar Reserva</button>
                 </article>
             </div>
-            <button class="btn-default" id="make-reservation">Fazer Nova Reserva</button>
+            <button class="btn-default" id="make-reservation"><a href="./../Controller/AppController.php?rota=reservaCrudController.php&action=reserva">Fazer Nova Reserva</a></button>
         </section>
     </main>
     <!-- FOOTER -->

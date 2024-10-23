@@ -17,9 +17,8 @@ class ReservaCrudController
 
     public function create ($dataReserva, $horaReserva, $pessoasReserva){
         session_start();
-        if(!isset($_SESSION['id'])){
             $id_usuario = $_SESSION['id'];
-        }
+
 
         $stmt = $this->pdo->prepare("INSERT INTO reservas (data_reserva, hora_reserva, numero_pessoas, id_usuario) VALUES (:data, :hora, :pessoas, :id_usuario)");
         if($stmt->execute(['data' => $dataReserva, 'hora' => $horaReserva, 'pessoas' => $pessoasReserva, 'id_usuario' => $id_usuario])){

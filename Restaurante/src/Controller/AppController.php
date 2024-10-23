@@ -17,6 +17,7 @@
     $reservaCrudController = new ReservaCrudController($conn);
     
     if($action === 'index') header('Location: ./../index.php');
+    if($action === 'reserva') header('Location: ./../views/part_view_reserva.php');
     if($action === 'cardapio') header('Location: ./../views/part_view_cardapio.php');
     if($action === 'tela-login') header('Location: ./../views/part_view_login.php');
     if($action === 'tela-cadastro') header('Location: ./../views/part_view_cadastro.php');

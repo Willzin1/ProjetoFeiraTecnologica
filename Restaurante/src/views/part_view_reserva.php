@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['nome']) || !isset($_SESSION['email']) || !isset($_SESSION['telefone'])) {
+    header("Location: part_view_login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-Br">
 <head>
@@ -14,11 +23,13 @@
             <form action="./../Controller/AppController.php?rota=ReservaCrudController&action=createReserva" method="POST" onsubmit="return validarReserva();">
                 <div class="grupo-formulario">
                     <label for="data">Data:</label>
-                    <input type="text" id="data" name="data" required>
+                    <input type="date" id="data" name="data" required>
                 </div>
                 <div class="grupo-formulario">
                     <label for="hora">Hora:</label>
-                    <select id="hora" name="hora" required><option value="12:00">12:00</option></select>
+                    <select id="hora" name="hora" required>
+                        <option value="12:00">12:00</option>
+                    </select>
                 </div>
                 <div class="grupo-formulario">
                     <label for="quantidade_cadeiras">Quantidade de Assentos:</label>
