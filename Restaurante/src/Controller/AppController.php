@@ -41,6 +41,8 @@
         $usuarioCrudController->logout();
     }
 
+    /* PARTE DAS RESERVAS */
+
     if($action === 'createReserva' && $request_method === 'POST'){
         $dataReserva = $_POST['data'];
         $horaReserva = $_POST['hora'];
