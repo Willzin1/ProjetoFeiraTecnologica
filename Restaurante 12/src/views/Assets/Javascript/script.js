@@ -141,13 +141,24 @@ const iconeOlho = document.getElementById('login-olho');
 
     /* PARTE PARA EDITAR O PERFIL */
     function editarPerfil() {
-        // Mostra o modal e o fundo escurecido
+        // Mostra o modal do perfil
         document.getElementById('modalOverlay').style.display = 'block';
         document.getElementById('modalEditarPerfil').style.display = 'block';
     }
     
     function fecharModal() {
-        // Esconde o modal e o fundo escurecido
+        // Esconde o modal do perfil e o fundo escurecido
         document.getElementById('modalOverlay').style.display = 'none';
         document.getElementById('modalEditarPerfil').style.display = 'none';
+    }
+
+    /* PARTE PARA DELETAR O PERFIL */
+    function abrirModalDelete() {
+        document.getElementById('modalOverlay').style.display = 'block';
+        document.getElementById('deleteModal').style.display = 'block';
+    }
+    
+    function fecharModalDelete() {
+        document.getElementById('modalOverlay').style.display = 'none';
+        document.getElementById('deleteModal').style.display = 'none';
     }

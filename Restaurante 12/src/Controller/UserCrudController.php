@@ -51,8 +51,8 @@ class UserCrudController
         session_start();
 
         if($usuExiste){
-        $stmt = $this->pdo->prepare("UPDATE usuario SET nome = :nome, telefone = :novoTelefone WHERE email = :email");
-        $stmt->execute(['nome' => $novoNome, 'novoTelefone' => $novoTelefone, 'email' => $email]);
+        $stmt = $this->pdo->prepare("UPDATE usuario SET nome = :novoNome, telefone = :novoTelefone WHERE email = :email");
+        $stmt->execute(['novoNome' => $novoNome, 'novoTelefone' => $novoTelefone, 'email' => $email]);
 
         $_SESSION['nome'] = $novoNome;
         $_SESSION['telefone'] = $novoTelefone;
@@ -61,21 +61,24 @@ class UserCrudController
         exit();
         }
     }
-
     
     // Método para deletar um usuário.
     public function delete($email){
         $usuExiste = $this->read($email);
         session_start();
-
+        
+        if($usuExiste){
         $stmt = $this->pdo->prepare("DELETE FROM usuario WHERE email = :email");
-        if($stmt->execute(['email' => $email])){
-            header("Location: ./../views/part_view_cadastro.php");
-            exit();
+            if($stmt->execute(['email' => $email])){
+                session_unset(); // Remove todas as variáveis de sessão
+                session_destroy(); // Destroi a sessão
+                header("Location: ./../views/part_view_cadastro.php");
+                exit();
+            }
         }
     }
 
-/*
+    /*
     public function list(){
         $stmt = $this->pdo->query("SELECT * FROM usuario");
         return $stmt->fetchAll(PDO::FETCH_CLASS, Usuario::class);

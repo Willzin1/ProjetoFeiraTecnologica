@@ -27,7 +27,6 @@ class ReservaCrudController
         }
     }
 
-    /*
    public function read($id_usuario)
     {
         $stmt = $this->pdo->prepare("SELECT * FROM reservas WHERE id_usuario = :id_usuario");
@@ -41,10 +40,17 @@ class ReservaCrudController
         $stmt->execute(['novaData' => $novaData, 'novaHora' => $novaHora, 'novaPessoas' => $novaPessoas]);
     }
 
-    public function delete($id_usuario){
-        $stmt = $this->pdo->prepare("DELETE FROM reservas WHERE id_usuario = :id_usuario");
-        return $stmt->execute(['id_usuario' => $id_usuario]);
+    public function delete($id_usuario, $id_reserva){
+        session_start();
+        $id_usuario = $_SESSION['id'];
+        $id_reserva = $_SESSION['id_reserva'];
+
+        $stmt = $this->pdo->prepare("DELETE FROM reservas WHERE id_usuario = :id_usuario AND id_reserva = :id_reserva");
+        if($stmt->execute(['id_usuario' => $id_usuario, 'id_reserva' => $id_reserva])){
+            header("Location: ./../views/part_view_perfil.php");
+            exit();
+        }
     }
 
-    */
+    
 }

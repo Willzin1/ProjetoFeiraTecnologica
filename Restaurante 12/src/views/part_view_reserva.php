@@ -26,7 +26,7 @@
                     <input type="text" id="data" name="data" required>
                 </div>
                 
-                <div class="ggrupo-formulario-reserva">
+                <div class="grupo-formulario-reserva">
                     <label for="hora">Hora:</label>
                     <select id="hora" name="hora" required>
                         <option value="">Selecione a Hora</option>
@@ -40,10 +40,10 @@
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
-                        <option value="8">8</option>
+                        <option value="5">5</option>
                         <option value="mais">+ Mais</option>
                     </select>
-                    <input type="number" id="custom_assentos" name="quantidade_cadeiras" class="hidden" placeholder="Quantidade personalizada" min="8">
+                    <input type="number" id="custom_assentos" name="custom_assentos" class="hidden" placeholder="Quantidade personalizada" min="5">
                 </div>
                 
                 <div class="button-container">

@@ -15,14 +15,36 @@
     // Criando o objeto do CRUD. Irá receber uma conexão como parâmetro.
     $usuarioCrudController = new UserCrudController($conn);
     $reservaCrudController = new ReservaCrudController($conn);
-    
-    if($action === 'index') header('Location: ./../index.php');
-    if($action === 'reserva') header('Location: ./../views/part_view_reserva.php');
-    if($action === 'cardapio') header('Location: ./../views/part_view_cardapio.php');
-    if($action === 'tela-login') header('Location: ./../views/part_view_login.php');
-    if($action === 'tela-cadastro') header('Location: ./../views/part_view_cadastro.php'); 
-    if($action === 'perfil') header('Location: ./../views/part_view_perfil.php');
 
+    switch($action){
+        case 'index': 
+            header('Location: ./../index.php');
+            break;
+        case 'reserva':
+            header('Location: ./../views/part_view_reserva.php');
+            break;
+        case 'cardapio':
+            header('Location: ./../views/part_view_cardapio.php');
+            break;
+        case 'tela-login': 
+            header('Location: ./../views/part_view_login.php'); 
+            break;   
+        case 'tela-cadastro':
+            header('Location: ./../views/part_view_cadastro.php');
+            break;    
+        case 'perfil':
+            header('Location: ./../views/part_view_perfil.php');
+            break;
+            
+        case 'sair':
+            $usuarioCrudController->logout();
+            break;
+
+        default:
+            header('Location: ./../index.php');
+            break;
+    }
+    
     if($action === 'create' && $request_method === 'POST'){
         $nome = $_POST['nome'];
         $email = $_POST['email'];
@@ -51,17 +73,21 @@
         $usuarioCrudController->delete($email);
     }
 
-    if($action === 'sair'){
-        $usuarioCrudController->logout();
-    }
-
     /* PARTE DAS RESERVAS */
-
     if($action === 'createReserva' && $request_method === 'POST'){
         $dataReserva = $_POST['data'];
         $horaReserva = $_POST['hora'];
         $pessoasReserva = $_POST['quantidade_cadeiras'];
 
+        if($pessoasReserva === 'mais') $pessoasReserva = $_POST['custom_assentos'];
+
         $reservaCrudController->create($dataReserva, $horaReserva, $pessoasReserva);
+    }
+
+    if($action === 'deletarReserva' && $request_method === 'POST'){
+        $id_usuario = $_POST['id'];
+        $id_reserva = $_POST['id_reserva'];
+
+        $reservaCrudController->delete($id_usuario, $id_reserva);
     }
 ?>        
