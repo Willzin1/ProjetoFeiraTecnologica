@@ -1,4 +1,4 @@
-<!--ALGO-->
+<!--Conteúdo principal da página inicial-->
 <main id="content">
     <section id="home">
         <div class="shape"></div>

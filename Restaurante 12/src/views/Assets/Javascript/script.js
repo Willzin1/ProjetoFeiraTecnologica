@@ -141,13 +141,11 @@ const iconeOlho = document.getElementById('login-olho');
 
     /* PARTE PARA EDITAR O PERFIL */
     function editarPerfil() {
-        // Mostra o modal do perfil
         document.getElementById('modalOverlay').style.display = 'block';
         document.getElementById('modalEditarPerfil').style.display = 'block';
     }
     
     function fecharModal() {
-        // Esconde o modal do perfil e o fundo escurecido
         document.getElementById('modalOverlay').style.display = 'none';
         document.getElementById('modalEditarPerfil').style.display = 'none';
     }
@@ -161,4 +159,14 @@ const iconeOlho = document.getElementById('login-olho');
     function fecharModalDelete() {
         document.getElementById('modalOverlay').style.display = 'none';
         document.getElementById('deleteModal').style.display = 'none';
+    }
+
+    /* PARTE PARA ALTERAR A RESERVA */
+    function abrirModalReservas(){
+        document.getElementById('modalOverlay').style.display = 'block';
+        document.getElementById('modalEditarReserva').style.display = 'block';
+    }
+    function fecharModalReservas(){
+        document.getElementById('modalOverlay').style.display = 'none';
+        document.getElementById('modalEditarReserva').style.display = 'none';
     }

@@ -16,6 +16,7 @@
     $usuarioCrudController = new UserCrudController($conn);
     $reservaCrudController = new ReservaCrudController($conn);
 
+        /* PARTE DOS REDIRECIONAMENTOS */
     switch($action){
         case 'index': 
             header('Location: ./../index.php');
@@ -45,6 +46,7 @@
             break;
     }
     
+        /* PARTE DO PERFIL */
     if($action === 'create' && $request_method === 'POST'){
         $nome = $_POST['nome'];
         $email = $_POST['email'];
@@ -68,12 +70,12 @@
         $usuarioCrudController->update($novoNome, $novoTelefone, $email);
     }
 
-    if($action === 'deletar'){
+    if($action === 'deletarPerfil'){
         $email = $_POST['email'];
         $usuarioCrudController->delete($email);
     }
 
-    /* PARTE DAS RESERVAS */
+        /* PARTE DAS RESERVAS */
     if($action === 'createReserva' && $request_method === 'POST'){
         $dataReserva = $_POST['data'];
         $horaReserva = $_POST['hora'];
@@ -89,5 +91,15 @@
         $id_reserva = $_POST['id_reserva'];
 
         $reservaCrudController->delete($id_usuario, $id_reserva);
+    }
+
+    if($action === 'updateReserva' && $request_method === 'POST'){
+        $id_usuario = $_POST['id'];
+        $id_reserva = $_POST['id_reserva'];
+        $novaData = $_POST['data'];
+        $novaHora = $_POST['hora'];
+        $novaPessoas = $_POST['quantidade_cadeiras'];
+
+        $reservaCrudController->update($id_usuario, $id_reserva, $novaData, $novaHora, $novaPessoas);
     }
 ?>        

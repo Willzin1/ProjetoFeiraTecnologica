@@ -51,6 +51,15 @@ section {
     align-items: flex-start; 
 }
 
+.btn-Res {
+    width: 30%;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* Responsividade */
 @media screen and (max-width: 800px) {
     .reservation {

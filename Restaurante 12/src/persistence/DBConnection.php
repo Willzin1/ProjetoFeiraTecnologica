@@ -24,7 +24,7 @@ class DBConnection
                 self::$instance = new PDO('mysql:host=' . $host . ';dbname=' . $dbName . ';charset=' . $charset, $username, $password);
                 self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $e) {
-                die("Connection failed: " . $e->getMessage());
+                die("Conexão falhou: " . $e->getMessage());
             }
         }
         return self::$instance;

@@ -19,7 +19,7 @@
         </ul>
 
         <button class="btn-default">
-            <a href="./../Controller/AppController.php?rota=reservaCrudController.php&action=reserva">Faça sua reserva aqui</a>
+            <a href="./../Controller/AppController.php?rota=reservaCrudController.php&action=reserva" >Faça sua reserva aqui</a>
         </button>
 
         <button id="mobile_btn">

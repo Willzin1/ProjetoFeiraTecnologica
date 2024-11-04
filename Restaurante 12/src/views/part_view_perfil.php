@@ -70,7 +70,8 @@ $reservas = $reservaCrudController->read($id_usuario);
                             <form action="./../Controller/AppController.php?rota=ReservaCrudController&action=deletarReserva" method="POST">
                                 <input type="hidden" name="id" value="<?= $_SESSION['id'] ?>">
                                 <input type="hidden" name="id_reserva" value="<?= $_SESSION['id_reserva'] = $reserva->getIdReserva() ?>">
-                                <button type="submit" class="profile-button">Deletar Reserva</button>
+                                <button type="button" class="profile-button" onclick="abrirModalReservas()">Alterar reserva</button>
+                                <button type="submit" class="profile-button btn-Del-Res">Deletar Reserva</button>
                             </form> 
                         </article>
                     <?php endforeach; ?>
@@ -78,7 +79,7 @@ $reservas = $reservaCrudController->read($id_usuario);
                     <p>Nenhuma reserva encontrada.</p>
                 <?php endif; ?>
             </div>
-            <button class="btn-default" id="make-reservation"><a href="./../Controller/AppController.php?rota=reservaCrudController.php&action=reserva">Fazer Nova Reserva</a></button>
+            <a href="./../Controller/AppController.php?rota=reservaCrudController.php&action=reserva"><button class="profile-button btn-Res" id="make-reservation">Fazer Nova Reserva</button></a>
         </section>
     </main>
 
