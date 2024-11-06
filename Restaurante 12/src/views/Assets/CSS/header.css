@@ -7,6 +7,10 @@ header {
     z-index: 3;
 }
 
+.btn-default a {
+    color: black;
+}
+
 #navbar {
     width: 100%;
     display: flex;

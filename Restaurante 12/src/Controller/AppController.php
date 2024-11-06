@@ -100,6 +100,8 @@
         $novaHora = $_POST['hora'];
         $novaPessoas = $_POST['quantidade_cadeiras'];
 
+        if($novaPessoas === 'mais') $novaPessoas = $_POST['custom_assentos'];
+
         $reservaCrudController->update($id_usuario, $id_reserva, $novaData, $novaHora, $novaPessoas);
     }
 ?>        
