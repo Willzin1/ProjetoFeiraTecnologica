@@ -71,5 +71,5 @@ jobs:
         with:
           app-name: 'sustenta-food-'
           slot-name: 'Production'
-          package: ./"Restaurante 12"/src/
+          package: ./"Restaurante 12"/src
           
