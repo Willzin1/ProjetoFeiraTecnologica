@@ -19,22 +19,22 @@
         /* PARTE DOS REDIRECIONAMENTOS */
     switch($action){
         case 'index': 
-            header('Location: ./../index.php');
+            header('Location: ./index.php');
             break;
         case 'reserva':
-            header('Location: ./../views/part_view_reserva.php');
+            header('Location: ./views/part_view_reserva.php');
             break;
         case 'cardapio':
-            header('Location: ./../views/part_view_cardapio.php');
+            header('Location: ./views/part_view_cardapio.php');
             break;
         case 'tela-login': 
-            header('Location: ./../views/part_view_login.php'); 
+            header('Location: ./views/part_view_login.php'); 
             break;   
         case 'tela-cadastro':
-            header('Location: ./../views/part_view_cadastro.php');
+            header('Location: ./views/part_view_cadastro.php');
             break;    
         case 'perfil':
-            header('Location: ./../views/part_view_perfil.php');
+            header('Location: ./views/part_view_perfil.php');
             break;
             
         case 'sair':
@@ -42,7 +42,7 @@
             break;
 
         default:
-            header('Location: ./../index.php');
+            header('Location: ./index.php');
             break;
     }
     
