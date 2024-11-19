@@ -50,7 +50,7 @@ $reservas = $reservaCrudController->read($id_usuario);
                     <button class="profile-button" id="edit-profile-btn" onclick="editarPerfil()">Editar Perfil</button>
                     <button type="button" class="profile-button" onclick="abrirModalDelete()">Deletar Perfil</button>
 
-                    <a href="./../Controller/AppController.php?rota=UserCrudController&action=sair"><button class="profile-button">Sair</button></a>
+                    <a href="./../../src/Controller/AppController.php?rota=UserCrudController&action=sair"><button class="profile-button">Sair</button></a>
                 </div>
             </div>
         </section>
@@ -67,7 +67,7 @@ $reservas = $reservaCrudController->read($id_usuario);
                             <p><b>Data:</b> <?= date('d/m/Y', strtotime($reserva->getDataReserva())); ?></p>
                             <p><b>Hora:</b> <?= (new DateTime($reserva->getHoraReserva()))->format('H:i'); ?></p>
                             <p><b>Quantidade de Pessoas:</b> <?= $reserva->getNumeroPessoas(); ?></p>
-                            <form action="./../Controller/AppController.php?rota=ReservaCrudController&action=deletarReserva" method="POST">
+                            <form action="./../../src/Controller/AppController.php?rota=ReservaCrudController&action=deletarReserva" method="POST">
                                 <input type="hidden" name="id" value="<?= $_SESSION['id'] ?>">
                                 <input type="hidden" name="id_reserva" value="<?= $_SESSION['id_reserva'] = $reserva->getIdReserva() ?>">
                                 <button type="button" class="profile-button" onclick="abrirModalReservas()">Alterar reserva</button>
@@ -79,7 +79,7 @@ $reservas = $reservaCrudController->read($id_usuario);
                     <p>Nenhuma reserva encontrada.</p>
                 <?php endif; ?>
             </div>
-            <a href="./../Controller/AppController.php?rota=reservaCrudController.php&action=reserva"><button class="profile-button btn-Res" id="make-reservation">Fazer Nova Reserva</button></a>
+            <a href="./../../src/Controller/AppController.php?rota=reservaCrudController.php&action=reserva"><button class="profile-button btn-Res" id="make-reservation">Fazer Nova Reserva</button></a>
         </section>
     </main>
 

@@ -21,7 +21,7 @@
                 <?php if (isset($_SESSION['error'])): ?>
                     <p class="msg-erro"><?php echo $_SESSION['error']; unset($_SESSION['error']); ?></p>
                 <?php endif; ?>
-                <form action="./../Controller/AppController.php?rota=UserCrudController.php&action=create" method="post">
+                <form action="./../../src/Controller/AppController.php?rota=UserCrudController.php&action=create" method="post">
                     <div class="grupo-formulario">
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" required>
@@ -43,7 +43,7 @@
                     <BR>
                 </form>
                 <div class="linha-separacao">
-                    <p>Já tem uma conta? <a href="../Controller/AppController.php?rota=UserCrudController.php&action=tela-login" class="link-login">Faça login</a></p>
+                    <p>Já tem uma conta? <a href="./../../src/Controller/AppController.php?rota=UserCrudController.php&action=tela-login" class="link-login">Faça login</a></p>
                 </div>
             </div>
         </div>

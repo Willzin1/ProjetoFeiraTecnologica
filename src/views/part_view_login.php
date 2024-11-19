@@ -24,7 +24,7 @@
                     <p class="msg-erro"><?php echo $_SESSION['error']; unset($_SESSION['error']); ?></p>
                 <?php endif; ?>
 
-                <form action="./../Controller/AppController.php?rota=UserCrudController.php&action=login" method="POST">
+                <form action="./../../src/Controller/AppController.php?rota=UserCrudController.php&action=login" method="POST">
                     <div class="grupo-formulario">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
@@ -39,7 +39,7 @@
                 </form>
 
                 <div class="linha-separacao">
-                    <p>Ainda não tem uma conta? <a href="../Controller/AppController.php?rota=UserCrudController.php&action=tela-cadastro" class="link-login"><br>Cadastre-se</a></p>
+                    <p>Ainda não tem uma conta? <a href="./../../src/Controller/AppController.php?rota=UserCrudController.php&action=tela-cadastro" class="link-login"><br>Cadastre-se</a></p>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@
             <h1 class="title">O sabor que vai de ponta a <span>ponta</span></h1>
             <p class="description">Nossa proposta é oferecer uma experiência gastronômica consciente, aproveitando ingredientes de forma integral e sustentável</p>
             <div id="cta_buttons">
-                <a href="../../../src/Controller/AppController.php?rota=UserCrudController.php&action=cardapio" class="btn-default">Ver cardápio</a>
+                <a href="./../../src/Controller/AppController.php?rota=UserCrudController.php&action=cardapio" class="btn-default">Ver cardápio</a>
                 <a href="tel:+55555555555" id="phone_button">
                     <button class="btn-default"><i class="fa-solid fa-phone"></i></button>
                     (11) 94002-8922
