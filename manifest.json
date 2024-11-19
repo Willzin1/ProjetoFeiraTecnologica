@@ -1,0 +1,21 @@
+{
+    "name": "SustentaFood",
+    "short_name": "SustentaFood",
+    "description": "Aplicativo do nosso restaurante",
+    "display": "fullscreen",
+    "start_url": "/index.php",
+    "scope": "/",
+
+    "icons": [
+        {
+            "src": "/src/views/Assets/Imagens/sustentavel192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/src/views/Assets/Imagens/sustentavel512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
