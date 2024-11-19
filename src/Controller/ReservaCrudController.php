@@ -23,7 +23,7 @@ class ReservaCrudController
 
         $stmt = $this->pdo->prepare("INSERT INTO reservas (data_reserva, hora_reserva, numero_pessoas, id_usuario) VALUES (:data, :hora, :pessoas, :id_usuario)");
         if ($stmt->execute(['data' => $dataReserva, 'hora' => $horaReserva, 'pessoas' => $pessoasReserva, 'id_usuario' => $id_usuario])) {
-            header("Location: ./../views/part_view_perfil.php");
+            header("Location: ./../../src/views/part_view_perfil.php");
             exit();
         }
     }
@@ -41,7 +41,7 @@ class ReservaCrudController
     public function update($id_usuario, $id_reserva, $novaData, $novaHora, $novaPessoas){
         $stmt = $this->pdo->prepare("UPDATE reservas SET data_reserva = :novaData, hora_reserva = :novaHora, numero_pessoas = :novaPessoas WHERE id_usuario = :idUsuario AND id_reserva = :idReserva");
         if($stmt->execute(['novaData' => $novaData, 'novaHora' => $novaHora, 'novaPessoas' => $novaPessoas, 'idUsuario' => $id_usuario, 'idReserva' => $id_reserva])){
-            header("Location: ./../views/part_view_perfil.php");
+            header("Location: ./../../src/views/part_view_perfil.php");
             exit();
         }
     }
@@ -54,7 +54,7 @@ class ReservaCrudController
 
         $stmt = $this->pdo->prepare("DELETE FROM reservas WHERE id_usuario = :id_usuario AND id_reserva = :id_reserva");
         if($stmt->execute(['id_usuario' => $id_usuario, 'id_reserva' => $id_reserva])){
-            header("Location: ./../views/part_view_perfil.php");
+            header("Location: ./../../src/views/part_view_perfil.php");
             exit();
         }
     }

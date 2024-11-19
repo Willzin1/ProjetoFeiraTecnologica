@@ -30,7 +30,7 @@ class UserCrudController
         $hash = password_hash($senha, PASSWORD_DEFAULT);
         $stmt = $this->pdo->prepare("INSERT INTO usuario (nome, email, telefone, senha) values (:nome, :email, :telefone, :senha)");
         if ($stmt->execute(['nome' => $nome, 'email' => $email, 'telefone' => $telefone, 'senha' => $hash])) {
-            header("Location: /../views/part_view_login.php");
+            header("Location: ./../../src/views/part_view_login.php");
             exit();
         }
     }
@@ -43,7 +43,6 @@ class UserCrudController
         $stmt->setFetchMode(PDO::FETCH_CLASS, Usuario::class);
         return $stmt->fetch();
     }
-
     
     // Método para fazer o update do usuário.
     public function update($novoNome, $novoTelefone, $email){
