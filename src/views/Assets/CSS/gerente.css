@@ -83,7 +83,7 @@
 
 /* Responsividade para o conteúdo principal */
 @media (max-width: 768px) {
-    .containerGerente main {
+    main {
         padding: 15px;
     }
 }
@@ -149,12 +149,12 @@
 }
 
 /* Seções */
-.containerGerente section {
+section {
     padding: 20px 0;
 }
 
 /* Botões */
-.containerGerente button {
+button {
     cursor: pointer;
     padding: 10px 15px;
     background-color: var(--color-primary-4);
@@ -165,7 +165,7 @@
     transition: background-color 0.3s ease;
 }
 
-.containerGerente button:hover {
+button:hover {
     background-color: var(--color-primary-5);
 }
 
