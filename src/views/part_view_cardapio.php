@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/gaspacho-de-pepino.png" class="dish-image" alt="">
+                    <img src="./Assets/Imagens/gaspacho-de-pepino1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Gaspacho de Pepino</h3>
                     <span class="dish-description">
                     Gaspacho de pepino é uma sopa fria refrescante, 

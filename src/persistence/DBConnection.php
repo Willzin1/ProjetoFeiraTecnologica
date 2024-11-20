@@ -16,7 +16,7 @@ class DBConnection
         if (self::$instance === null) {
             try {
                 // Se precisar testar no localhost, só colocar as informações que estão comentadas.
-                $host = 'sustentafood-flex-server.mysql.database.azure.com'; // 'localhost';
+                $host = 'sustentafood-flex-server.mysql.database.azure.com'; // 'sustentafood-flex-server.mysql.database.azure.com';
                 $dbName = 'restaurante'; // 'restaurante';
                 $username = 'william'; // 'root';
                 $password = 'Heitor1805'; // '';
