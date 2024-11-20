@@ -41,3 +41,13 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    /* Para telas menores que 768px (tablets e smartphones maiores) */
+    .modal {
+        width: 90%;
+    }
+
+    .grupo-formulario {
+        flex-direction: column; /* Faz com que os botões fiquem empilhados verticalmente */
+    }
+}
