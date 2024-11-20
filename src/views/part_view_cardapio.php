@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/gaspacho-de-pepino1.png" class="dish-image" alt="">
+                    <img src="./Assets/Imagens/gaspacho-de-pepino.png" class="dish-image" alt="">
                     <h3 class="dish-title">Gaspacho de Pepino</h3>
                     <span class="dish-description">
                     Gaspacho de pepino é uma sopa fria refrescante, 
@@ -122,7 +122,7 @@
 
                 <div class="dish">
                     <img src="./Assets/Imagens/geladochocolate-1.png" class="dish-image" alt="">
-                    <h3 class="dish-title">Tarte de Choloate Branco</h3>
+                    <h3 class="dish-title">Gelato de Chocolate Branco</h3>
                     <span class="dish-description">
                     Este gelado de chocolate com calda de framboesa é uma deliciosa alternativa para quem tem problemas com a ingestão de produtos lácteos.
                     </span>

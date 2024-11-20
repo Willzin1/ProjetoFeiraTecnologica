@@ -45,7 +45,7 @@ $reservas = $reservaCrudController->read($id_usuario);
                     <h3><?= $_SESSION['nome']; ?></h3>
                     <p><strong>Email: </strong><?= $_SESSION['email']; ?></p> 
                     <p><strong>Telefone: </strong><?= $_SESSION['telefone'];?></p>
-                    <p><strong>Localização:</strong> São Paulo, SP</p>
+                   <!-- <p><strong>Localização:</strong> São Paulo, SP</p>-->
                     <!-- Botão para editar perfil -->
                     <button class="profile-button" id="edit-profile-btn" onclick="editarPerfil()">Editar Perfil</button>
                     <button type="button" class="profile-button" onclick="abrirModalDelete()">Deletar Perfil</button>

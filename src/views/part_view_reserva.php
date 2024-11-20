@@ -13,9 +13,7 @@
 </head>
 <body>
 
-    <?php
-        include 'part_view_header_nav.php';
-    ?>
+    <?php include 'part_view_header_nav.php'; ?>
  
     <main id="content-reserva">
         <div class="container-reserva">

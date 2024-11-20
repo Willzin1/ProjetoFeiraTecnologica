@@ -16,10 +16,10 @@ class DBConnection
         if (self::$instance === null) {
             try {
                 //$dsn = 'mysql:host=localhost;dbname=Testando;charset=utf8';
-                $host = 'sustentafood-flex-server.mysql.database.azure.com';
+                $host = 'localhost';
                 $dbName = 'restaurante';
-                $username = 'william';
-                $password = 'Heitor1805';
+                $username = 'root';
+                $password = '';
                 $charset = 'utf8';
                 self::$instance = new PDO('mysql:host=' . $host . ';dbname=' . $dbName . ';charset=' . $charset, $username, $password);
                 self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
