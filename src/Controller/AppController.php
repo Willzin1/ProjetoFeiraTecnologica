@@ -60,7 +60,7 @@
         $email = $_POST['email'];
         $senha = $_POST['senha'];
         
-        if ($email === 'admin' && $senha === 'admin123'){
+        if ($email === 'admin@admin.com' && $senha === 'admin123'){
             header('Location: ./../views/part_view_gerente.php');
             exit();
         }
