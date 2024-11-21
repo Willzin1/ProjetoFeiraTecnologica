@@ -44,7 +44,7 @@
                     </div>
                     <div class="prato-back">
                         <div class="prato-details">
-                            <p>Descubra o sabor do aproveitamento total com nosso Bolo de Abacaxi, onde cada pedaço conta uma história de sustentabilidade. Utilizando as cascas do abacaxi, transformamos um ingrediente muitas vezes descartado em uma deliciosa base que exalta o frescor tropical.</p>
+                            <!-- <p>Descubra o sabor do aproveitamento total com nosso Bolo de Abacaxi, onde cada pedaço conta uma história de sustentabilidade. Utilizando as cascas do abacaxi, transformamos um ingrediente muitas vezes descartado em uma deliciosa base que exalta o frescor tropical.</p> -->
                             <!-- <button class="btn-default"><h4>VOLTA</h4></button> -->
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                     </div>
                     <div class="prato-back">
                         <div class="prato-details">
-                            <p>Uma sopa que celebra a leveza e a simplicidade dos ingredientes, perfeita para dias quentes e momentos de descontração</p>
+                            <!-- <p>Uma sopa que celebra a leveza e a simplicidade dos ingredientes, perfeita para dias quentes e momentos de descontração</p> -->
                             <!-- <button class="btn-default"><h4>VOLTA</h4></button> -->
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                     </div>
                     <div class="prato-back">
                         <div class="prato-details">
-                            <p>Desperte os seus sentidos com este vibrante prato de Esparguete ao Pesto, onde a simplicidade encontra a sofisticação. O esparguete, cozido à perfeição, é envolto em um pesto aromático, complementado por tomates frescos e uma generosa porção de rúcula, que adiciona um toque de frescor e crocância</p>
+                            <!-- <p>Desperte os seus sentidos com este vibrante prato de Esparguete ao Pesto, onde a simplicidade encontra a sofisticação. O esparguete, cozido à perfeição, é envolto em um pesto aromático, complementado por tomates frescos e uma generosa porção de rúcula, que adiciona um toque de frescor e crocância</p> -->
                             <!-- <button class="btn-default"><h4>VOLTA</h4></button> -->
                         </div>
                     </div>
@@ -119,7 +119,7 @@
                     </div>
                     <div class="prato-back">
                         <div class="prato-details">
-                            <p>Descubra a deliciosa harmonia de sabores da nossa Pizza de Legumes Grelhados! Começamos com uma base de massa perfeitamente dourada, pincelada com uma mistura aromática de azeite, orégãos, tomilho e alho, que proporciona um sabor irresistível.</p>
+                            <!-- <p>Descubra a deliciosa harmonia de sabores da nossa Pizza de Legumes Grelhados! Começamos com uma base de massa perfeitamente dourada, pincelada com uma mistura aromática de azeite, orégãos, tomilho e alho, que proporciona um sabor irresistível.</p> -->
                             <!-- <button class="btn-default"><h4>VOLTA</h4></button> -->
                         </div>
                     </div>

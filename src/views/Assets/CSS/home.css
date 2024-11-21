@@ -14,7 +14,7 @@
 
 #cta .title {
     font-size: 4rem;
-    color: var(--color-neutral-1);;
+    color: var(--color-neutral-1);
 }
 
 #cta .title span {
@@ -32,7 +32,7 @@
 
 #cta_buttons a {
     text-decoration: none;
-    color: var(--color-neutral-1);;
+    color: var(--color-neutral-1);
 }
 
 #phone_button {
@@ -81,32 +81,7 @@ header.fixed + .shape {
     pointer-events: none; /* Impede interações */
 }
 
-
-@media screen and (max-width: 1170px) {
-    #home {
-        min-height: 100%;
-        padding-top: 0px;
-    }
-
-    #banner,
-    #banner img,
-    #home .shape {
-        display: none;
-    }
-
-    #cta {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    #phone_button button {
-        display: none;
-    }
-}
-
+/* Ajustes para os pratos */
 #pratos {
     display: flex;
     flex-wrap: wrap;
@@ -116,9 +91,10 @@ header.fixed + .shape {
 .prato {
     perspective: 1000px;
     margin: 20px;
-    width: 500px;  /* Mantendo a largura do card */
-    height: 600px; /* Mantendo a altura do card */
+    width: 500px;  /* Largura inicial do card */
+    height: 650px; /* Ajustando altura para garantir espaço para as estrelas */
     display: flex;
+    transition: all 0.3s ease-in-out;
 }
 
 .prato-inner {
@@ -145,19 +121,7 @@ header.fixed + .shape {
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-}
-
-.prato-back {
-    transform: rotateY(180deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-.prato.active .prato-inner {
-    transform: rotateY(180deg);
+    padding-bottom: 10px; /* Ajustando padding para garantir que as estrelas fiquem visíveis */
 }
 
 .prato-image {
@@ -166,18 +130,12 @@ header.fixed + .shape {
     object-fit: cover;
 }
 
-.prato-details {
-    padding: 10px;
-    text-align: justify;
-}
-
 .btn-default {
     margin-top: 10px;
 }
 
 .prato-heart {
     position: absolute;
-    /* background-color: #FFFFFF; ADICIONAR COR ATRÁS DO CORAÇÃO SE ACHARMOS NECESSÁRIO*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,4 +146,56 @@ header.fixed + .shape {
     right: -10px;
     top: -10px;
     border-radius: 0px 37.5px 0px 42.5px;
+}
+
+/* Ajustes para a tela responsiva - Reduzindo os pratos */
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Ajustando os pratos na tela menor */
+    .prato {
+        width: 350px;  /* Diminuindo a largura */
+        height: 500px; /* Diminuindo a altura */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .prato {
+        width: 300px;  /* Reduzindo ainda mais a largura */
+        height: 450px; /* Ajustando a altura */
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .prato {
+        width: 250px;  /* Reduzindo a largura para dispositivos muito pequenos */
+        height: 400px; /* Ajustando a altura para dispositivos muito pequenos */
+    }
+}
+
+/* Estilo para as estrelas */
+.prato-rate i {
+    color: #FFD700; /* Cor amarela para as estrelas */
+    font-size: 1.2rem;
+}
+
+.prato-rate span {
+    color: var(--color-neutral-1);
+    font-size: 1rem;
+    margin-left: 5px;
 }
