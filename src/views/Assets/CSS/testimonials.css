@@ -13,10 +13,15 @@
 
 #testimonials .section-subtitle {
     font-size: 3rem;
+    text-align: center;  /* Centraliza o subtítulo */
 }
 
 #testimonials_content {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Alinha todo o conteúdo ao centro */
+    justify-content: center;
 }
 
 #feedbacks {
@@ -30,6 +35,7 @@
 .feedback {
     display: flex;
     align-items: center;
+    justify-content: center;  /* Centraliza os itens dentro do feedback */
     gap: 20px;
     background-color: var(--color-neutral-0);
     padding: 12px;
@@ -44,22 +50,32 @@
     object-fit: cover;
 }
 
-.feedback-content p {
+.feedback-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;  /* Centraliza o conteúdo do depoimento */
+    gap: 8px;  /* Espaço entre o nome e as estrelas */
+    text-align: center;
+}
+
+.feedback-content p {
+    display: block;  /* Garante que o nome do cliente fique em uma linha */
 }
 
 .feedback-content p span {
     color: var(--color-primary-6);
+    display: flex;
+    justify-content: center;  /* Centraliza as estrelas */
+    gap: 5px;  /* Adiciona espaço entre as estrelas */
 }
 
 @media screen and (max-width: 1170px) {
     #testimonials {
         flex-direction: column;
+        align-items: center;
     }
 
     #testimonials .section-subtitle {
-        text-align: center;
         font-size: 2.5rem;
     }
 
@@ -69,9 +85,6 @@
 
     #testimonials_content {
         width: 70%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }
 
@@ -86,5 +99,6 @@
 
     .feedback {
         flex-direction: column;
+        align-items: center;
     }
-} 
+}
