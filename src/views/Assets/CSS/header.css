@@ -60,7 +60,7 @@ header {
         background-color: transparent;
         font-size: 1.5rem;
         cursor: pointer;
-        color: var(--color-primary-4);
+        color: var(--color-primary-5);
     }
 
     #mobile_menu.active {
