@@ -31,7 +31,7 @@
         </p>
         <form action="./../Controller/AppController.php?rota=UserCrudController&action=deletarPerfil" method="POST">
             <input type="hidden" name="email" value="<?= $_SESSION['email'] ?>">
-            <button type="submit" class="profile-button">Deletar Perfil</button>
+            <button type="submit" class="profile-button btn-red">Deletar Perfil</button>
         </form>
         <button type="button" class="profile-button" onclick="fecharModalDelete()">Cancelar</button>
     </div>

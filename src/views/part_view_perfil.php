@@ -50,7 +50,7 @@ $reservas = $reservaCrudController->read($id_usuario);
                     <button class="profile-button" id="edit-profile-btn" onclick="editarPerfil()">Editar Perfil</button>
                     <button type="button" class="profile-button" onclick="abrirModalDelete()">Deletar Perfil</button>
 
-                    <a href="./../../src/Controller/AppController.php?rota=UserCrudController&action=sair"><button class="profile-button">Sair</button></a>
+                    <a href="./../../src/Controller/AppController.php?rota=UserCrudController&action=sair"><button class="profile-button btn-red">Sair</button></a>
                 </div>
             </div>
         </section>
@@ -71,7 +71,7 @@ $reservas = $reservaCrudController->read($id_usuario);
                                 <input type="hidden" name="id" value="<?= $_SESSION['id'] ?>">
                                 <input type="hidden" name="id_reserva" value="<?= $_SESSION['id_reserva'] = $reserva->getIdReserva() ?>">
                                 <button type="button" class="profile-button" onclick="abrirModalReservas()">Alterar reserva</button>
-                                <button type="submit" class="profile-button btn-Del-Res">Deletar Reserva</button>
+                                <button type="submit" class="profile-button btn-Del-Res btn-red">Deletar Reserva</button>
                             </form> 
                         </article>
                     <?php endforeach; ?>

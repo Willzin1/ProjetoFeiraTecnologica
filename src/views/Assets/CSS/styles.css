@@ -65,6 +65,14 @@ section {
     background-color: var(--color-secundary-1);
 }
 
+.btn-red {
+    background-color: #ff0000c2;
+}
+
+.btn-red:hover{
+    background-color: #ff000067;
+}
+
 .social-media-buttons {
     display: flex;
     gap: 18px;
