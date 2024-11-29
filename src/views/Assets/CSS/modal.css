@@ -39,3 +39,34 @@
 .close-btn:hover {
     background-color: darkred;
 }
+
+@media (max-width: 768px) {
+    .modal {
+        width: 80%; /* Reduz a largura */
+        padding: 15px; /* Ajusta o espaçamento interno */
+    }
+
+    .modal h3 {
+        font-size: 1.2rem; /* Tamanho menor para títulos */
+    }
+
+    .grupo-formulario,
+    .grupo-formulario-reserva {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grupo-formulario label,
+    .grupo-formulario-reserva label {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+
+    .grupo-formulario input,
+    .grupo-formulario-reserva input,
+    .grupo-formulario select,
+    .grupo-formulario-reserva select {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
