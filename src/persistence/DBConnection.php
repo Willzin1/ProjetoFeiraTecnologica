@@ -16,10 +16,10 @@ class DBConnection
         if (self::$instance === null) {
             try {
                 // Se precisar testar no localhost, só colocar as informações que estão comentadas.
-                $host = 'localhost'; // 'localhost';
+                $host = 'sustentafood-flex-server.mysql.database.azure.com'; // 'localhost';
                 $dbName = 'restaurante'; // 'restaurante';
-                $username = 'root'; // 'root';
-                $password = ''; // '';
+                $username = 'william'; // 'root';
+                $password = 'Heitor1805'; // '';
                 $charset = 'utf8';
                 self::$instance = new PDO('mysql:host=' . $host . ';dbname=' . $dbName . ';charset=' . $charset, $username, $password);
                 self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
