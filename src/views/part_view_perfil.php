@@ -1,11 +1,20 @@
 <?php
-// Antes de mostrar as reservas, certifique-se de que a sessão está iniciada
 session_start();
 
+// Verificação para validar se o usuário está logado ou não. Caso não esteja, será redirecionado para a tela de login.
 if (!isset($_SESSION['nome']) || !isset($_SESSION['email']) || !isset($_SESSION['telefone'])) {
     header("Location: part_view_login.php");
     exit();
 }
+
+// Função para formatar o número de telefone.
+function formataNum($numero){
+    if(strlen($numero >= 8)){
+        return substr($numero, 0, 5) . '-' . substr($numero, 5);
+    }
+    return $numero;
+}
+$telFormatado = formataNum($_SESSION['telefone']);
 
 // Conectar ao banco de dados e instanciar o controlador de reservas
 require_once __DIR__ . '/../../vendor/autoload.php';
@@ -16,7 +25,7 @@ $conn = DBConnection::getInstance();
 $reservaCrudController = new ReservaCrudController($conn);
 
 // Obter as reservas do usuário
-$id_usuario = $_SESSION['id']; // Supondo que você tenha o ID do usuário na sessão
+$id_usuario = $_SESSION['id']; 
 $reservas = $reservaCrudController->read($id_usuario);
 ?>
 
@@ -44,7 +53,7 @@ $reservas = $reservaCrudController->read($id_usuario);
                 <div class="profile-info">
                     <h3><?= $_SESSION['nome']; ?></h3>
                     <p><strong>Email: </strong><?= $_SESSION['email']; ?></p> 
-                    <p><strong>Telefone: </strong><?= $_SESSION['telefone'];?></p>
+                    <p><strong>Telefone: </strong><?= $telFormatado;?></p>
                    <!-- <p><strong>Localização:</strong> São Paulo, SP</p>-->
                     <!-- Botão para editar perfil -->
                     <button class="profile-button" id="edit-profile-btn" onclick="editarPerfil()">Editar Perfil</button>
