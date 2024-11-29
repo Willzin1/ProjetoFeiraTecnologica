@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="pt-Br">
 
@@ -9,10 +11,7 @@
 </head>
 
 <body>
-    <?php
-    session_start();
-    include 'part_view_header_nav.php';
-    ?>
+    <?php include 'part_view_header_nav.php'; ?>
 
     <main>
         <div id="menu">
