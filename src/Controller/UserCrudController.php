@@ -77,13 +77,6 @@ class UserCrudController
         }
     }
 
-    /*
-    public function list(){
-        $stmt = $this->pdo->query("SELECT * FROM usuario");
-        return $stmt->fetchAll(PDO::FETCH_CLASS, Usuario::class);
-    }
-   */
-
     // Método para fazer o login do usuário. Irá receber um email e uma senha que virão do formulário de login.
     public function login($email, $senha)
     {
@@ -122,4 +115,5 @@ class UserCrudController
         header("Location: ./../../src/views/part_view_login.php"); // Redireciona para a tela de login
         exit();
     }
+
 }

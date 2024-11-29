@@ -65,108 +65,34 @@ $(document).ready(function() { /* FUNÇÃO DE GIRO DOS CARDS DE FAVORITO, FAVOR,
     });
 }); 
 
-/*CODIGOS PRO PERFIL*/
+/* PARTE PARA ABRIR/FECHAR O MODAL DO EDITAR PERFIL */
+function editarPerfil() {
+    document.getElementById('modalOverlay').style.display = 'block';
+    document.getElementById('modalEditarPerfil').style.display = 'block';
+}
 
-const iconeOlho = document.getElementById('login-olho');
-      const inputSenha = document.getElementById('login-senha');
-      const inputUsuario = document.getElementById('login-usuario');
-      const form = document.getElementById('login-form');
+function fecharModal() {
+    document.getElementById('modalOverlay').style.display = 'none';
+    document.getElementById('modalEditarPerfil').style.display = 'none';
+}
 
-      iconeOlho.addEventListener('click', () => {
-          if (inputSenha.type === 'password') {
-              inputSenha.type = 'text';
-              iconeOlho.classList.remove('ri-eye-off-line');
-              iconeOlho.classList.add('ri-eye-line');
-          } else {
-              inputSenha.type = 'password';
-              iconeOlho.classList.remove('ri-eye-line');
-              iconeOlho.classList.add('ri-eye-off-line');
-          }
-      });
+/* PARTE PARA ABRIR/FECHAR O MODAL DO DELETAR PERFIL */
+function abrirModalDelete() {
+    document.getElementById('modalOverlay').style.display = 'block';
+    document.getElementById('deleteModal').style.display = 'block';
+}
 
-      form.addEventListener('submit', (e) => {
-          e.preventDefault(); // Evita o envio do formulário
+function fecharModalDelete() {
+    document.getElementById('modalOverlay').style.display = 'none';
+    document.getElementById('deleteModal').style.display = 'none';
+}
 
-          const usuario = inputUsuario.value.trim().toUpperCase(); // Aceita tanto maiúsculas quanto minúsculas
-          const senha = inputSenha.value;
-
-          const errorMessage = document.getElementById('error-message');
-          const successMessage = document.getElementById('success-message');
-
-          // Limpa mensagens anteriores
-          errorMessage.style.display = 'none';
-          successMessage.style.display = 'none';
-
-          if (usuario === 'STEH7' && senha === '2659') {
-              successMessage.textContent = 'Bem-vinda, STEH7!';
-              successMessage.style.display = 'block';
-
-              form.classList.add('login-success'); // Adiciona a classe de sucesso
-              setTimeout(() => {
-                  window.location.href = "espelho.html"; // Redireciona para a página desejada
-              }, 2000); // Aguardar 2 segundos antes de redirecionar pro espelho
-          } else {
-              errorMessage.textContent = 'Você não tem permissão para logar, contate um admin.';
-              errorMessage.style.display = 'block';
-          }
-      });
-
-      window.onload = function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const status = urlParams.get('status');
-        const messageBox = document.getElementById('message-box');
-
-        if (status === 'success') {
-            messageBox.textContent = 'Usuário cadastrado com sucesso!';
-            messageBox.classList.add('success');
-            messageBox.style.display = 'block';
-        } else if (status === 'error') {
-            messageBox.textContent = 'Erro: Email já cadastrado!';
-            messageBox.classList.add('error');
-            messageBox.style.display = 'block';
-        }
-    };
-
-    window.onload = function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const status = urlParams.get('status');
-        const messageBox = document.getElementById('message-box');
-
-        if (status === 'error') {
-            messageBox.textContent = 'Email ou senha incorretos!';
-            messageBox.classList.add('error');
-            messageBox.style.display = 'block';
-        }
-    };
-
-    /* PARTE PARA EDITAR O PERFIL */
-    function editarPerfil() {
-        document.getElementById('modalOverlay').style.display = 'block';
-        document.getElementById('modalEditarPerfil').style.display = 'block';
-    }
-    
-    function fecharModal() {
-        document.getElementById('modalOverlay').style.display = 'none';
-        document.getElementById('modalEditarPerfil').style.display = 'none';
-    }
-
-    /* PARTE PARA DELETAR O PERFIL */
-    function abrirModalDelete() {
-        document.getElementById('modalOverlay').style.display = 'block';
-        document.getElementById('deleteModal').style.display = 'block';
-    }
-    
-    function fecharModalDelete() {
-        document.getElementById('modalOverlay').style.display = 'none';
-        document.getElementById('deleteModal').style.display = 'none';
-    }
-
-    /* PARTE PARA ALTERAR A RESERVA */
-    function abrirModalReservas(){
-        document.getElementById('modalOverlay').style.display = 'block';
-        document.getElementById('modalEditarReserva').style.display = 'block';
-    }
-    function fecharModalReservas(){
-        document.getElementById('modalOverlay').style.display = 'none';
-        document.getElementById('modalEditarReserva').style.display = 'none';
-    }
+/* PARTE PARA ABRIR/FECHAR O MODAL DA RESERVA */
+function abrirModalReservas(){
+    document.getElementById('modalOverlay').style.display = 'block';
+    document.getElementById('modalEditarReserva').style.display = 'block';
+}
+function fecharModalReservas(){
+    document.getElementById('modalOverlay').style.display = 'none';
+    document.getElementById('modalEditarReserva').style.display = 'none';
+}
