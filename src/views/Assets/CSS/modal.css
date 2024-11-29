@@ -40,7 +40,7 @@
     background-color: darkred;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .modal {
         width: 80%; /* Reduz a largura */
         padding: 15px; /* Ajusta o espaçamento interno */
@@ -69,4 +69,5 @@
         font-size: 0.9rem;
         padding: 10px;
     }
+    
 }
