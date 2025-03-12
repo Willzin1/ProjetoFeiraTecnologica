@@ -23,7 +23,7 @@
                     <h3 class="dish-title">Creme de pepino e couve-flor</h3>
                     <span class="dish-description">
                         Delicie-se com este creme de pepino e couve-flor, uma entrada leve e saudável,
-                         ideal para promover saciedade sem abrir mão de sabor.
+                        ideal para promover saciedade sem abrir mão de sabor.
                     </span>
                 </div>
 
@@ -31,7 +31,7 @@
                     <img src="./Assets/Imagens/legumes-salteados1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Legumes Salteados</h3>
                     <span class="dish-description">
-                    Esses legumes salteados tornam-se o acompanhamento ideal para qualquer refeição.
+                        Esses legumes salteados tornam-se o acompanhamento ideal para qualquer refeição.
                     </span>
                 </div>
 
@@ -39,8 +39,8 @@
                     <img src="./Assets/Imagens/salada-de-bagos-com-camarao1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Salado de Bagos com Camarão</h3>
                     <span class="dish-description">
-                 Uma salada de bagos com camarão repleta de sabores frescos. 
-                    Uma opção deliciosa e nutritiva para quem busca uma alimentação equilibrada.
+                        Uma salada de bagos com camarão repleta de sabores frescos.
+                        Uma opção deliciosa e nutritiva para quem busca uma alimentação equilibrada.
                     </span>
                 </div>
 
@@ -48,9 +48,9 @@
                     <img src="./Assets/Imagens/gaspacho-de-pepino1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Gaspacho de Pepino</h3>
                     <span class="dish-description">
-                    Gaspacho de pepino é uma sopa fria refrescante, 
-                    com pepino, rúcula e hortelã fresca. Ideal para dias quentes, 
-                    é leve, nutritiva e saudável.
+                        Gaspacho de pepino é uma sopa fria refrescante,
+                        com pepino, rúcula e hortelã fresca. Ideal para dias quentes,
+                        é leve, nutritiva e saudável.
                     </span>
                 </div>
                 <!--------- Adicionr mais pratos --------->
@@ -74,7 +74,7 @@
                     <img src="./Assets/Imagens/one-pot-pasta-a-marinheira1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Linguine negro com amêijoas</h3>
                     <span class="dish-description">
-                    Um prato de comida reconfortante e de aspecto original, linguine negro com amêijoas
+                        Um prato de comida reconfortante e de aspecto original, linguine negro com amêijoas
                     </span>
                 </div>
 
@@ -82,7 +82,7 @@
                     <img src="./Assets/Imagens/polvo-guisado-com-arroz1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Polvo Guisado com Arroz</h3>
                     <span class="dish-description">
-                    O queridinho da casa, o polvo guisado com arroz vai ser a estrela da refeição. Sabores tradicionais à sua mesa!
+                        O queridinho da casa, o polvo guisado com arroz vai ser a estrela da refeição. Sabores tradicionais à sua mesa!
                     </span>
                 </div>
 
@@ -90,8 +90,8 @@
                     <img src="./Assets/Imagens/bacalhau-a-enterro1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Bacalhau à Enterro</h3>
                     <span class="dish-description">
-                    O Bacalhau à Enterro, um clássico da Páscoa em Portugal,
-                     combina tradição e sabor numa receita simples, com bacalhau, batatas e nabiças
+                        O Bacalhau à Enterro, um clássico da Páscoa em Portugal,
+                        combina tradição e sabor numa receita simples, com bacalhau, batatas e nabiças
                     </span>
                 </div>
                 <!--------- Adicionr mais pratos --------->
@@ -106,8 +106,8 @@
                     <img src="./Assets/Imagens/tarte-de-tres-frutos1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Tarte de três frutos</h3>
                     <span class="dish-description">
-                    A tarte de três frutos combina pêssegos, ameixas e nectarinas numa base crocante, 
-                    criando uma sobremesa equilibrada, doce e refrescante.
+                        A tarte de três frutos combina pêssegos, ameixas e nectarinas numa base crocante,
+                        criando uma sobremesa equilibrada, doce e refrescante.
                     </span>
                 </div>
 
@@ -115,8 +115,8 @@
                     <img src="./Assets/Imagens/tarte-de-chocolate1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Tarte de Chocolate Branco e Frutos vermelhos</h3>
                     <span class="dish-description">
-                    Se a sua perdição é o chocolate, seguramente esta tarte de chocolate branco 
-                    e frutos vermelhos é uma deliciosa proposta de doce.
+                        Se a sua perdição é o chocolate, seguramente esta tarte de chocolate branco
+                        e frutos vermelhos é uma deliciosa proposta de doce.
                     </span>
                 </div>
 
@@ -124,7 +124,7 @@
                     <img src="./Assets/Imagens/geladochocolate-1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Gelato de Chocolate Branco</h3>
                     <span class="dish-description">
-                    Este gelado de chocolate com calda de framboesa é uma deliciosa alternativa para quem tem problemas com a ingestão de produtos lácteos.
+                        Este gelado de chocolate com calda de framboesa é uma deliciosa alternativa para quem tem problemas com a ingestão de produtos lácteos.
                     </span>
                 </div>
 
@@ -132,9 +132,9 @@
                     <img src="./Assets/Imagens/pudimCaramelo1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Pudim de Caramelo</h3>
                     <span class="dish-description">
-                    O pudim de caramelo com framboesas é uma deliciosa sobremesa
-                     que une a riqueza do caramelo à vivacidade das framboesas.
-                      
+                        O pudim de caramelo com framboesas é uma deliciosa sobremesa
+                        que une a riqueza do caramelo à vivacidade das framboesas.
+
                     </span>
                 </div>
                 <!--------- Adicionr mais pratos --------->
@@ -148,7 +148,7 @@
                     <img src="./Assets/Imagens/sumo-de-abacaxi-espinafres-e-pepino2.png" class="dish-image" alt="">
                     <h3 class="dish-title">Granizado de Limão</h3>
                     <span class="dish-description">
-                    Descubra este granizado de limão, com limoncello e hortelã e espinafre. Garantimos que não vai sobrar um gole
+                        Descubra este granizado de limão, com limoncello e hortelã e espinafre. Garantimos que não vai sobrar um gole
                     </span>
                 </div>
 
@@ -156,8 +156,8 @@
                     <img src="./Assets/Imagens/sumo-de-cascas-de-abacaxi1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Pina Colada</h3>
                     <span class="dish-description">
-                    Explore uma refrescante e tropical piña colada, 
-                    o famoso coquetel de abacaxi com leite de coco e rum.
+                        Explore uma refrescante e tropical piña colada,
+                        o famoso coquetel de abacaxi com leite de coco e rum.
                     </span>
                 </div>
 
@@ -165,8 +165,8 @@
                     <img src="./Assets/Imagens/Cidreira1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Changria de Cidreira, Laranja e Vinho Branco</h3>
                     <span class="dish-description">
-                    Uma fusão diferente, entre o chá (que vem do Oriente) 
-                    e o vinho (predominante sobretudo no Mediterrânico).
+                        Uma fusão diferente, entre o chá (que vem do Oriente)
+                        e o vinho (predominante sobretudo no Mediterrânico).
                     </span>
                 </div>
 
@@ -174,13 +174,88 @@
                     <img src="./Assets/Imagens/caipirinha-de-melancia1.png" class="dish-image" alt="">
                     <h3 class="dish-title">Suco de Melancia</h3>
                     <span class="dish-description">
-                    Sugerimos este suco de melância com um toque de lima e maple syrup,
-                     uma opção refrescante e leve.
+                        Sugerimos este suco de melância com um toque de lima e maple syrup,
+                        uma opção refrescante e leve.
                     </span>
                 </div>
                 <!--------- Adicionr mais pratos --------->
             </div>
         </section>
+
+
+        <section id="menu">
+            <h2 class="section-title">Cardápio Infantil</h2>
+            <h3 class="section-subtitle">Entrada</h3>
+            <div id="dishes">
+                <div class="dish">
+                    <img src="./Assets/Imagens/lanche.png" class="dish-image" alt="Hambúrguer de Frango">
+                    <h3 class="dish-title">Hambúrguer de Frango</h3>
+                    <span class="dish-description">
+                        Delicioso hambúrguer de frango grelhado, servido com molho especial e batatas fritas crocantes.
+                    </span>
+                </div>
+
+                <div class="dish">
+                    <img src="./Assets/Imagens/macarrao-com-almondegas.jpg" class="dish-image" alt="Macarrão com Almôndegas">
+                    <h3 class="dish-title">Macarrão com Almôndegas</h3>
+                    <span class="dish-description">
+                        Massa macia com almôndegas de carne, coberta com molho de tomate caseiro, perfeita para os pequenos.
+                    </span>
+                </div>
+
+                <div class="dish">
+                    <img src="./Assets/Imagens/pizza-de-frango.png" class="dish-image" alt="Pizza de Frango">
+                    <h3 class="dish-title">Pizza de Frango</h3>
+                    <span class="dish-description">
+                        Pizza pequena com frango desfiado, queijo derretido e molho tomate. Ideal para as crianças que amam pizza!
+                    </span>
+                </div>
+
+                <div class="dish">
+                    <img src="./Assets/Imagens/nuggets-de-frango.png" class="dish-image" alt="Nuggets de Frango">
+                    <h3 class="dish-title">Nuggets de Frango</h3>
+                    <span class="dish-description">
+                        Nuggets crocantes de frango, acompanhados de molho barbecue ou ketchup, para uma refeição divertida.
+                    </span>
+                </div>
+
+                <div class="dish">
+                    <img src="./Assets/Imagens/sanduiche-de-queijo.png" class="dish-image" alt="Sanduíche de Queijo">
+                    <h3 class="dish-title">Sanduíche de Queijo</h3>
+                    <span class="dish-description">
+                        Sanduíche simples e saboroso de queijo derretido, uma opção deliciosa e reconfortante para as crianças.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h3 class="section-subtitle">sobremesas</h3>
+            <div id="dishes">
+                <div class="dish">
+                    <img src="./Assets/Imagens/pipoca-doce.png" class="dish-image" alt="Pipoca Doce">
+                    <h3 class="dish-title">Pipoca Doce</h3>
+                    <span class="dish-description">
+                        Pipoca doce feita com caramelo, uma opção saborosa para a sobremesa ou lanche da tarde.
+                    </span>
+                </div>
+                <div class="dish">
+                    <img src="./Assets/Imagens/pudin-de-chocolate.png" class="dish-image" alt="Pudim de Chocolate">
+                    <h3 class="dish-title">Pudim de Chocolate</h3>
+                    <span class="dish-description">
+                        Pudim cremoso de chocolate, perfeito para adoçar o paladar de quem gosta de um doce simples.
+                    </span>
+                </div>
+                <div class="dish">
+                    <img src="./Assets/Imagens/suco-de-laranja.png" class="dish-image" alt="Suco de Laranja">
+                    <h3 class="dish-title">Suco de Laranja</h3>
+                    <span class="dish-description">
+                        Suco natural de laranja fresquinho, ideal para acompanhar qualquer refeição.
+                    </span>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- FOOTER -->
