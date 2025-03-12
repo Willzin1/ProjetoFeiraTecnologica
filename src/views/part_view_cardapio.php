@@ -204,7 +204,7 @@
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/pizza-de-frango.png" class="dish-image" alt="Pizza de Frango">
+                    <img src="./Assets/Imagens/pizza-de-frango.jpg" class="dish-image" alt="Pizza de Frango">
                     <h3 class="dish-title">Pizza de Frango</h3>
                     <span class="dish-description">
                         Pizza pequena com frango desfiado, queijo derretido e molho tomate. Ideal para as crianças que amam pizza!
@@ -212,7 +212,7 @@
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/nuggets-de-frango.png" class="dish-image" alt="Nuggets de Frango">
+                    <img src="./Assets/Imagens/nuggets-de-frango.jpeg" class="dish-image" alt="Nuggets de Frango">
                     <h3 class="dish-title">Nuggets de Frango</h3>
                     <span class="dish-description">
                         Nuggets crocantes de frango, acompanhados de molho barbecue ou ketchup, para uma refeição divertida.
@@ -220,7 +220,7 @@
                 </div>
 
                 <div class="dish">
-                    <img src="./Assets/Imagens/sanduiche-de-queijo.png" class="dish-image" alt="Sanduíche de Queijo">
+                    <img src="./Assets/Imagens/sanduiche-com-queijo.jpg" class="dish-image" alt="Sanduíche de Queijo">
                     <h3 class="dish-title">Sanduíche de Queijo</h3>
                     <span class="dish-description">
                         Sanduíche simples e saboroso de queijo derretido, uma opção deliciosa e reconfortante para as crianças.
@@ -233,25 +233,24 @@
             <h3 class="section-subtitle">sobremesas</h3>
             <div id="dishes">
                 <div class="dish">
-                    <img src="./Assets/Imagens/pipoca-doce.png" class="dish-image" alt="Pipoca Doce">
+                    <img src="./Assets/Imagens/pipoca-doce.jpg" class="dish-image" alt="Pipoca Doce">
                     <h3 class="dish-title">Pipoca Doce</h3>
                     <span class="dish-description">
                         Pipoca doce feita com caramelo, uma opção saborosa para a sobremesa ou lanche da tarde.
                     </span>
                 </div>
                 <div class="dish">
-                    <img src="./Assets/Imagens/pudin-de-chocolate.png" class="dish-image" alt="Pudim de Chocolate">
+                    <img src="./Assets/Imagens/pudim-de-chocolate.jpg" class="dish-image" alt="Pudim de Chocolate">
                     <h3 class="dish-title">Pudim de Chocolate</h3>
                     <span class="dish-description">
                         Pudim cremoso de chocolate, perfeito para adoçar o paladar de quem gosta de um doce simples.
                     </span>
                 </div>
                 <div class="dish">
-                    <img src="./Assets/Imagens/suco-de-laranja.png" class="dish-image" alt="Suco de Laranja">
-                    <h3 class="dish-title">Suco de Laranja</h3>
+                    <img src="./Assets/Imagens/gelado-com-bolacha-maria.jpg" class="dish-image" alt="Suco de Laranja">
+                    <h3 class="dish-title">Gelado com bolacha Maria</h3>
                     <span class="dish-description">
-                        Suco natural de laranja fresquinho, ideal para acompanhar qualquer refeição.
-                    </span>
+                    Gelado com bolacha Maria: uma forma deliciosa de dar nova vida à típica bolacha portuguesa.
                 </div>
             </div>
         </section>
