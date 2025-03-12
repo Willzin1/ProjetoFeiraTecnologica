@@ -84,6 +84,18 @@
     justify-content: center;
     min-height: 100vh;
 }
+.dish-image {
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: auto; /* Mantém a proporção original */
+    max-height: 30%; /* Ajuste para limitar a altura se necessário */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço disponível */
+    border-radius: 10px; /* Opcional, para bordas arredondadas */
+}
+@media screen and (max-width: 600px) {
+    .dish-image {
+        max-height:60%; /* Reduz um pouco a altura para se ajustar melhor a telas pequenas */
+    }
+}
 
 #dishes {
     width: 100%;
